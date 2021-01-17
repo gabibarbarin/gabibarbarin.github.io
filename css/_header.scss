@@ -1,0 +1,20 @@
+header{
+    padding: 60px;
+    background-image: url(../img/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    >div{
+        background-color: rgba($color: black, $alpha: .7);
+        border-radius: 10px;
+        h1{
+            font-size: 25px;
+            margin: 0;
+        }
+        p{
+            padding-bottom: 10px;
+        }
+    }
+}
