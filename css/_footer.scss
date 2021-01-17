@@ -1,0 +1,12 @@
+footer{
+    background-color: black;
+    padding: 15px 0;
+    text-align: center;
+
+    a{
+        @include text-general;
+    }
+    a:hover{
+        color: $secondary-color-dark;
+    }
+}
