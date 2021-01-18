@@ -83,6 +83,13 @@ img {
   font-size: 15px;
 }
 
+.titles-third {
+  color: #4F359B;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
 .titles-strong {
   color: #F45B69;
 }
