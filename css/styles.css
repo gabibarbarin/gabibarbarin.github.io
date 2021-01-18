@@ -295,6 +295,16 @@ header > div p {
   margin: 0;
 }
 
+.blog-box .untitled-list {
+  list-style-type: disc;
+  margin: 0;
+}
+
+.blog-box .untitled-list li {
+  font-size: 13px;
+  margin: 0;
+}
+
 .blog-box ul {
   padding-left: 15px;
 }
