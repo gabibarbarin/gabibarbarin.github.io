@@ -28,6 +28,16 @@ img{
     border-radius: 10px;
 }
 
+.blog-box{
+    padding: 30px 15px;
+    .titled-list{
+        padding-top: 0px 20px 20px 20px;
+    }
+    .untitled-list{
+        padding: 20px;
+    }
+}
+
 .general-button{
     background-color: $primary-color-dark;
     font-size: 13px;
@@ -73,5 +83,9 @@ img{
 .titles-second{
     @include color-mayus;
     font-size: 15px;
+}
+
+.titles-strong{
+    color: $secondary-color;
 }
 
