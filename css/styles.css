@@ -18,6 +18,7 @@ a {
 
 a:hover {
   color: #4F359B;
+  cursor: pointer;
 }
 
 ul {
@@ -91,6 +92,10 @@ header > div p {
   display: none;
   position: absolute;
   /*Cuando aparece no deforma el nav =)*/
+}
+
+#main-menu > ul > li:hover {
+  cursor: pointer;
 }
 
 #main-menu > ul > li:hover > ul {
