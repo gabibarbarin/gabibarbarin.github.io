@@ -6,20 +6,6 @@
     p,strong{
         @include text-general;
     }
-
-    .read-more{
-        background-color: $primary-color-dark;
-        font-size: 13px;
-        padding: 10px;
-        margin: 5px 0 10px 0;
-        border-radius: 10px;
-        display: inline-block;
-    }
-
-    .read-more:hover{
-        background-color: $secondary-color;
-        font-weight: bold;
-    }
 }
 
 //-- Aside--//
@@ -58,5 +44,12 @@
 @media only screen and (max-width: 700px){
     .row{
         flex-direction: column;
+    }
+    .titles{
+        margin-top: 0;
+    }
+    .return-button{
+        display: inline-block;
+        
     }
 }
