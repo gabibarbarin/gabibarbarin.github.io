@@ -84,6 +84,12 @@ img{
     font-size: 15px;
 }
 
+.titles-third{
+    @include color-mayus;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
 .titles-strong{
     color: $secondary-color;
 }
