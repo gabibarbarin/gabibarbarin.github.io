@@ -32,6 +32,18 @@ img {
   border-radius: 10px;
 }
 
+.blog-box {
+  padding: 30px 15px;
+}
+
+.blog-box .titled-list {
+  padding-top: 0px 20px 20px 20px;
+}
+
+.blog-box .untitled-list {
+  padding: 20px;
+}
+
 .general-button, .return-button {
   background-color: #4F359B;
   font-size: 13px;
@@ -69,6 +81,10 @@ img {
   color: #4F359B;
   text-transform: uppercase;
   font-size: 15px;
+}
+
+.titles-strong {
+  color: #F45B69;
 }
 
 header {
@@ -264,44 +280,40 @@ header > div p {
   text-align: center;
 }
 
-.rice-box {
-  padding: 30px 15px;
+.blog-box .titles-strong {
+  font-size: 15px;
+  text-transform: uppercase;
 }
 
-.rice-box ul {
+.blog-box .titled-list {
   list-style-type: disc;
-  padding: 20px;
   margin: 0;
 }
 
-.rice-box ul li {
+.blog-box .titled-list li {
   font-size: 13px;
   margin: 0;
 }
 
-.oats-box {
-  padding: 30px 15px;
-}
-
-.oats-box ul {
+.blog-box ul {
   padding-left: 15px;
 }
 
-.oats-box ul li {
+.blog-box ul li {
   margin-top: 10px;
 }
 
-.oats-box ul li h2 {
+.blog-box ul li h2 {
   margin: 0;
 }
 
-.oats-box img {
+.blog-box img {
   display: block;
   margin: auto;
   width: 65%;
 }
 
-.oats-box .text-end-blog {
+.blog-box .text-end-blog {
   text-align: center;
   font-size: 20px;
 }
