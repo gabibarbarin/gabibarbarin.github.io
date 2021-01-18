@@ -18,7 +18,6 @@ a {
 
 a:hover {
   color: #4F359B;
-  cursor: pointer;
 }
 
 ul {
@@ -31,6 +30,33 @@ ul a:hover {
 
 img {
   border-radius: 10px;
+}
+
+.general-button, .return-button {
+  background-color: #4F359B;
+  font-size: 13px;
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.general-button:hover, .return-button:hover {
+  background-color: #F45B69;
+  font-weight: bold;
+}
+
+.return-button {
+  margin: 0;
+  display: none;
+}
+
+.button-top {
+  margin-bottom: 10px;
+}
+
+.button-bot {
+  margin-top: 10px;
 }
 
 .titles {
@@ -140,20 +166,6 @@ header > div p {
   margin: 0;
 }
 
-.row .read-more {
-  background-color: #4F359B;
-  font-size: 13px;
-  padding: 10px;
-  margin: 5px 0 10px 0;
-  border-radius: 10px;
-  display: inline-block;
-}
-
-.row .read-more:hover {
-  background-color: #F45B69;
-  font-weight: bold;
-}
-
 .aside {
   -webkit-box-flex: 30%;
       -ms-flex: 30%;
@@ -200,6 +212,12 @@ header > div p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .titles {
+    margin-top: 0;
+  }
+  .return-button {
+    display: inline-block;
   }
 }
 
