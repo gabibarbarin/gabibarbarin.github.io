@@ -6,4 +6,11 @@
            @include text-general;
         }
     }
+    .untitled-list{
+        list-style-type: disc;
+        margin: 0;
+        li{
+           @include text-general;
+        }
+    }
 }
