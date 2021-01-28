@@ -37,5 +37,14 @@ header{
 @media only screen and (max-width: 600px){
     header{
         height: 100px;
+        .container-nav{
+            margin-right:0%;
+            padding:  5px 0;
+            .nav-button{
+                .link-button{
+                    padding: 10px 15px;
+                }
+            }
+        }   
     }
 }
