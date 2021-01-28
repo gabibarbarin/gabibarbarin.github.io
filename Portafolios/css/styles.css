@@ -80,7 +80,7 @@ header .nav-button .link-button:hover {
 /*  Moviles  */
 @media only screen and (max-width: 600px) {
   header {
-    height: 100px;
+    height: 50px;
   }
   header .container-nav {
     margin-right: 0%;
