@@ -1,8 +1,4 @@
 header{
-    .menu-icon{
-        width: 40px;
-        //display: none;
-    }
     .container-nav{
         display: flex;
         justify-content: flex-end;
@@ -40,17 +36,6 @@ header{
 /*  Moviles  */
 @media only screen and (max-width: 600px){
     header{
-        //height: 50px;
-        .menu-icon{
-            display: block;
-            position: fixed;
-            //position: absolute;
-            //right: 10px;
-            //top: 10px;
-        }
-        .container-nav{
-            position: absolute;
-            display: none;
-        }
+        height: 100px;
     }
 }
