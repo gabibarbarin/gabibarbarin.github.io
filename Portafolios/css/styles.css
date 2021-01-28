@@ -40,10 +40,6 @@ a:hover {
   color: #8ea09d;
 }
 
-header .menu-icon {
-  width: 40px;
-}
-
 header .container-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -83,13 +79,8 @@ header .nav-button .link-button:hover {
 
 /*  Moviles  */
 @media only screen and (max-width: 600px) {
-  header .menu-icon {
-    display: block;
-    position: fixed;
-  }
-  header .container-nav {
-    position: absolute;
-    display: none;
+  header {
+    height: 100px;
   }
 }
 
