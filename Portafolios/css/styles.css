@@ -82,6 +82,13 @@ header .nav-button .link-button:hover {
   header {
     height: 100px;
   }
+  header .container-nav {
+    margin-right: 0%;
+    padding: 5px 0;
+  }
+  header .container-nav .nav-button .link-button {
+    padding: 10px 15px;
+  }
 }
 
 article #container-sm {
