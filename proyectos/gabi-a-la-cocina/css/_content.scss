@@ -1,0 +1,32 @@
+//-- Content --//
+.content{
+    flex: 70%;
+    .main{
+        
+        flex-direction: column;
+        padding: 30px 15px;
+
+        .title-post{
+            @include color-mayus;
+            font-size: 13px;
+        }
+        .title-post:hover{
+            color: $secondary-color;
+        }
+        .img-post{
+            height: 240px;
+            width: 100%;
+            box-shadow: 2px 2px 4px $gray-color-dark;
+            object-fit: cover;
+            margin: 15px 0;
+        }
+        .more-entries{
+            @include text-general;
+            color: $primary-color-dark;
+            text-decoration: underline;
+            display: block;
+            text-align: center;
+        }
+
+    }
+}
