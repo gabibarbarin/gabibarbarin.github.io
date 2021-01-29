@@ -1,0 +1,336 @@
+*{
+    box-sizing: border-box; /* Sirve para calcular los tamaños sin preocuparse por padding y margin */
+}
+body{
+    margin: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body a{
+    text-decoration: none;
+}
+/* Comienza header */
+.contenedor{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+    align-content: center;
+}
+.background-header{
+    background: linear-gradient(rgba(137, 200, 252, 0.5),rgba(165, 207, 248, 0.2));
+    align-content: center;
+    height: 100vh;
+}
+/* Contiene menu, logo y boton que despliega el menu */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*padding-top: 15px;*/
+}
+header a{
+    color: black;
+}
+.menu-icon{
+    display: none;
+}
+/* Contiene logo */
+#logo{
+    flex: 4%;
+    font-size: 20px;
+}
+/* Contiene menu */
+nav{
+    margin-top: 15px;
+}
+/* Botones del menu */
+.elemento-menu{
+    font-size: 15px;
+    margin: 0 0 0 25px;
+    transition: padding .4s;
+    transition: background-color .30s;
+}
+.elemento-menu:hover{
+    padding: 10px;
+    background-color: rgba(78, 175, 255, 0.28);
+    transition: .4s;
+}
+/* Contiene palabras y boton */
+.titular{
+    text-align: center;
+    margin-top: 13%;
+}
+.titular h1{
+    font-size: 55px;
+    margin: 0px;
+}
+.titular h2{
+    font-size: 23px;
+    margin: 0 0 25px 0;
+}
+.titular a{
+    display: inline-block;
+}
+/* Contiene estilos de los botones azules de toda la pagina */
+.boton-general{
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    background-color: royalblue;
+    padding: 15px 20px 15px 20px;
+    transition: color 0.4s;
+}
+.boton-general:hover{
+    color: black;
+    transition: color 0.4s;
+}
+/* Comienza sobre mi */
+#view-port-sobre-mi{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+/* Contiene los estilos del titulo de cada seccion */
+.titulo-sections{
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+/* Contiene foto, parrafo y boton */
+.sobre-mi{
+    display: flex;
+    align-items: center;
+}
+picture{
+    display: flex;
+    flex: 45%;
+    justify-content: center;
+}
+picture img{
+    max-width: 100%;
+    height: auto;
+}
+.parrafo-boton{
+    flex: 55%;
+}
+.parrafo-boton p{
+    margin: 0px;
+    text-align: left;
+    font-size: 15px;
+}
+/* Comienza Servicios */
+#view-port-servicios{
+    background-color: rgb(239, 247, 255);
+}
+/* Contiene todos los servicios */
+.servicios{
+    display: flex;
+    flex-wrap: wrap;
+}
+.servicio-singular{
+    flex: 25%;
+    margin: 0 15px 15px 0;
+    padding: 13px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 14px #ccc;
+}
+.servicio-singular img{
+    float: right;
+}
+/* Colores de fondo de los servicios */
+.color1{
+    background-color:  #DAF2FF;
+}
+.color2{
+    background-color: #C4EAFF;
+}
+/* Contiene estilos de los subtitulos h3 */
+.titulos-h3{
+    font-size: 20px;
+    color: grey;
+}
+.servicio-singular p{
+    font-size: 15px;
+    color: #B2B2B2;
+}
+/* Comienza Mis trabajos */
+#view-port-mis-trabajos{
+    height: 100vh;
+    align-items: center;
+    display: flex;
+}
+/* Contiene las flechas */
+.owl-nav{
+    text-align: center;
+}
+/* Flechas */
+span{
+    font-size: 80px;
+    color: #9edafa;
+}
+/* Comienza ¿Por qué trabajar conmigo? */
+#view-port-trabajar-conmigo{
+    height: 100vh;
+    background-color: rgb(239, 247, 255);
+    display: flex;
+    align-content: center;
+}
+.contenedor-razones{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.razon{
+    text-align: center;
+    padding: 0 6% 0 6%;
+}
+.razon h5 {
+    margin: 0px;
+    font-size: 15px;
+}
+.razon p {
+    font-size: 15px;
+    line-height: 25px;
+}
+/* Comienza Blog */
+#view-port-blog{
+    height: 100vh;
+}
+.contenedor-blogs{
+    display: flex;
+    justify-content: space-around;
+}
+/* Cada blog individual */
+.blog{
+    flex-basis: 30%;
+    box-shadow: 1px 1px 14px #ccc;
+    background-color: rgb(225, 240, 255);
+    align-content: flex-start;
+    padding-bottom: 5%;
+}
+.blog a{
+    float: left;
+    margin: 10px 10px 10px 15px;
+}
+.blog img{
+    width: 100%;
+    height: auto;
+}
+.blog p{
+    color: rgb(178, 178, 178);
+    font-size: 15px;
+    line-height: 25px;
+    display: inline-block;
+    margin-bottom: 18%;
+    margin:  0 15px 0 15px;
+}
+.titulos-h4{
+    padding:  0 15px 0 15px;
+    font-size: 16px;
+    color: grey; 
+}
+/* Comienza el footer */
+.view-port-footer{
+    height: 30vh;
+    background: linear-gradient(rgba(137, 200, 252, 0.5),rgba(165, 207, 248, 0.2));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    text-align: center;
+}
+.footer h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    color: grey;
+}
+.footer a{
+    padding: 15px 45px 15px 45px;
+}
+/* Comienza el icono de whatsapp */
+.icono-whatsapp{
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+}
+.icono-whatsapp img{
+    width: 50px;
+    height: auto;
+}
+/* Comienza Responsive celulares */
+@media (max-width: 600px){
+    nav{
+        position: absolute;
+        top: 15px;
+        display: none;
+    }
+    .contenedor-menu{  
+        margin: 10px 0 10px 0;
+        display: flex;
+        flex-direction: column;
+        padding-right: 15px;
+        background: linear-gradient(rgba(101, 188, 250, 0.5),rgba(165, 207, 248, 0.2));
+    }
+    .menu-icon{
+        display: block;
+        width: 30px;
+    }
+    .titular {
+        margin-top: 50%;
+    }
+    .titular h1 {
+        font-size: 45px;
+    }
+    #view-port-sobre-mi {
+        height: 102vh;
+    }
+    .sobre-mi{
+        flex-direction: column;
+    }
+    .parrafo-boton {
+        text-align: center;
+    }
+    picture img {
+        margin-bottom: 15px;
+    }
+    .parrafo-boton p{
+        text-align: center;
+    }
+    .servicios {
+        flex-direction: column;
+    }
+    #view-port-servicios h2 {
+        padding-top: 18px;
+    }
+    .servicio-singular {
+        padding: 18px;
+        border-radius: 10px;
+        margin: 0px 0px 20px 0px;
+    }
+    #view-port-mis-trabajos {
+        height: 65vh;
+    }
+    #view-port-trabajar-conmigo {
+        height: 120vh;
+    }
+    .contenedor-razones {
+        flex-direction: column;
+    }
+    #view-port-blog {
+        height: 150vh;
+    }
+    .contenedor-blogs{
+        flex-direction: column;
+    }
+    .blog {
+        width: 100%;
+    }
+    .view-port-footer {
+        height: 20vh;
+    }
+    .footer h3 {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+}
