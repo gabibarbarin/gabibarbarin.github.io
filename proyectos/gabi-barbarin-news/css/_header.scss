@@ -1,0 +1,20 @@
+header{
+    float: left;
+    width: 100%;
+    font-family: $bold-font;
+    text-align: center;
+    margin: 15px 0;
+
+    img{
+        width: 150px;
+    }
+
+    h1{
+        letter-spacing: -1.5px;
+        word-spacing: 2px;
+        font-size: 50px;
+        margin: 0px;
+        text-shadow: $gray-shadow; /*Dist Dist Difuminacion*/
+        color: $primary-color;
+    }
+}
