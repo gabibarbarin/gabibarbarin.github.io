@@ -1,0 +1,30 @@
+@import "./colors-theme-1";
+@import "font";
+
+$gray-border: solid 1px $gray-color;
+$gray-dark-border: solid 1px $gray-color-dark;
+$secondary-color-border: solid 1px $secondary-color-dark;
+$gray-shadow: 2px 2px 5px $gray-color;
+$bold-font: "NunitoSans-Bold",Arial, Helvetica, sans-serif;
+$regular-font:"NunitoSans-Regular",Arial, Helvetica, sans-serif;
+
+@mixin font-backgraund-style ($background-color,$color){
+    background-color: $background-color;
+    color: $color;
+    text-transform: uppercase;
+}
+@mixin gray-border-shadow ($border,$shadow){
+    border: $border;
+    box-shadow: $shadow;
+}
+
+@import "common";
+@import "header";
+@import "main-menu";
+@import "aside";
+@import "content";
+@import "content-1";
+@import "content-2";
+@import "content-3";
+@import "content-4";
+@import "footer";
