@@ -1,0 +1,72 @@
+aside{
+    float: left;
+    width: 300px;
+    background-color: white;
+    margin-top: 40px;
+    padding: 25px;
+    box-sizing: border-box;
+    border: $gray-border;
+    box-shadow: $gray-shadow;
+
+    h3{
+        @include font-backgraund-style($secondary-color,white);
+        font-size: 18px;
+        border-top: $secondary-color-border;
+        border-bottom: $secondary-color-border;
+        text-align: center;
+        padding: 5px 0;
+        font-family: $bold-font;
+    }
+
+    div{
+        form{
+            input{
+                display: block;
+            }
+        }
+    }
+
+    blockquote{
+        margin: 0;
+        font-style: italic;
+        color: $gray-color-dark;
+    }
+}
+
+.widget{
+    margin-bottom: 60px;
+
+    form{
+        input[type="email"] , input[type="password"]{
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        input[type="submit"]{
+            @include font-backgraund-style($primary-color,white);
+            width: 100%;
+            padding: 10px 0;
+            border: none;  
+            transition: all 0.3s;
+        }
+        input[type="submit"]:hover{
+            background-color: $primary-color-dark;
+            cursor: pointer;
+        }
+    }
+    ul{
+        list-style-type: circle;
+        padding-left: 20px;
+
+        li{
+            margin: 15px 0;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    aside{
+        width: 100%;
+    }
+}
