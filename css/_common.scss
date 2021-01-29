@@ -2,95 +2,50 @@
     box-sizing: border-box;
 }
 
-html,body{
+body,html{
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $primary-font, Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
+
+h1{
+    font-family: $primary-font;
+}
+
+.title-section{
+    font-size: 54px;
+    margin: 30px 0 60px -63px;
+}
+
+.global-container{
+    max-width: 1280px;
+    margin-left: 9%;
+}
+
 a{
     text-decoration: none;
-    color: white;
-    transition: all .4s;
+    color: $primary-color-dark;
+    transition: all .0s;
 }
+
 a:hover{
-    color: $primary-color-dark;
+    color: $primary-color-str-clear;
 }
 
-ul{
-    list-style-type: none;
-    a:hover{
-        background-color: $secondary-color;   
+@media only screen and (max-width:768px){
+    .title-section{
+        font-size: 40px;
+        margin-bottom: 40px;
+        margin-left: -46px;
     }
 }
-
-img{
-    border-radius: 10px;
-}
-
-.blog-box{
-    padding: 30px 15px;
-    .titled-list{
-        padding-top: 0px 20px 20px 20px;
+@media only screen and (max-width: 600px){
+    .title-section{
+        margin-bottom: 20px;
+        margin-left: -5%;
     }
-    .untitled-list{
-        padding: 20px;
+    .global-container{
+        margin-left: 5%;
     }
 }
-
-.general-button{
-    background-color: $primary-color-dark;
-    font-size: 13px;
-    padding: 10px;
-    margin: 5px 0 10px 0;
-    border-radius: 10px;
-    display: inline-block;
-}
-.general-button:hover{
-    background-color: $secondary-color;
-    font-weight: bold;
-}
-
-.return-button{
-    @extend .general-button;
-    margin: 0;
-    display: none;
-}
-
-.button-top{
-    margin-bottom: 10px;
-}
-
-.button-bot{
-    margin-top: 10px;
-}
-
-@mixin text-general {
-    font-size: 13px;
-    margin: 0;  
-}
-
-@mixin color-mayus {
-    color: $primary-color-dark;
-    text-transform: uppercase;
-}
-
-.titles{
-    @include color-mayus;
-    font-size: 20px;
-}
-
-.titles-second{
-    @include color-mayus;
-    font-size: 15px;
-}
-
-.titles-third{
-    @include color-mayus;
-    font-size: 13px;
-    margin-bottom: 0;
-}
-
-.titles-strong{
-    color: $secondary-color;
-}
-
