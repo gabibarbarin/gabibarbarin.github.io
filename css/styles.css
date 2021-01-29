@@ -21,7 +21,7 @@ body, html {
 }
 
 h1 {
-  font-family: "SourceSansPro-regular";
+  font-family: "SourceSansPro-light", sans-serif, Tahoma, Geneva, Verdana;
 }
 
 .title-section {
