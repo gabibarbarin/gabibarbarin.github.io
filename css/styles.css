@@ -16,12 +16,12 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: "SourceSansPro-light", Tahoma, Geneva, Verdana, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "SourceSansPro-light", sans-serif, Tahoma, Geneva, Verdana;
   scroll-behavior: smooth;
 }
 
 h1 {
-  font-family: "SourceSansPro-light", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "SourceSansPro-light", sans-serif, Tahoma, Geneva, Verdana;
 }
 
 .title-section {
@@ -158,7 +158,7 @@ article #container-sm .container-img-fig .container-fig {
 }
 
 article #container-sm .container-img-fig .container-fig figcaption {
-  font-family: "SourceSansPro-regular", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "SourceSansPro-regular", sans-serif, Tahoma, Geneva, Verdana;
   width: 200px;
   font-size: 20px;
   word-spacing: 10px;
@@ -179,7 +179,7 @@ article #container-sm .mini-explanation {
 }
 
 article #container-sm .mini-explanation > p {
-  font-family: "SourceSansPro-regular", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "SourceSansPro-regular", sans-serif, Tahoma, Geneva, Verdana;
   width: 40%;
   display: block;
   margin: -40px 5% 0 55%;
@@ -228,7 +228,7 @@ article #container-sm .mini-explanation > p > a {
     margin: 15px 0 0 5%;
   }
   article #container-sm .container-img-fig .container-fig figcaption {
-    font-family: "SourceSansPro-regular", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "SourceSansPro-regular", sans-serif, Tahoma, Geneva, Verdana;
     -webkit-transform: none;
             transform: none;
     margin: 0;
