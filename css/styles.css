@@ -16,7 +16,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: "SourceSansPro-regular";
+  font-family: "SourceSansPro-light", sans-serif, Tahoma, Geneva, Verdana;
   scroll-behavior: smooth;
 }
 
