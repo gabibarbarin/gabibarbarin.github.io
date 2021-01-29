@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <title>Gabi Barbarin News</title>
+</head>
+<body>
+
+<div class="conteiner">
+    
+    <div include-html="header.html"></div>
+    <div include-html="main-menu.html"></div>
+    <div include-html="aside.html"></div>
+
+    <section class="content">
+        <article id="article-4">
+            <h1>
+                ¿Qué es un lenguaje de marcado?
+            </h1>
+            <p>
+                Un lenguaje de marcado o lenguaje de marcas es una forma de 
+                codificar un documento que, junto con el texto, incorpora etiquetas o 
+                marcas que contienen información adicional acerca de la estructura del 
+                texto o su presentación.
+            </p>
+            <p>
+                El lenguaje de marcas más extendido es el HTML (HyperText Markup Language, 
+                lenguaje de marcado de hipertexto), fundamento del World Wide Web (entramado 
+                de comunicación de alcance mundial).
+            </p>
+            <p>
+                Los lenguajes de marcado suelen confundirse con lenguajes de programación. 
+                Sin embargo, no son lo mismo, ya que el lenguaje de marcado no tiene funciones 
+                aritméticas o variables, como poseen los lenguajes de programación. Históricamente, 
+                el marcado se usaba y se usa en la industria editorial y de la comunicación, 
+                así como entre autores, editores e impresores.
+            </p>
+            <p>
+                Un ejemplo de cómo funciona el lenguaje de marcado puede observarse en el dictado de viva 
+                voz de un documento a una persona que lo transcribe a máquina:
+            </p>
+            <dl>
+                <dd>
+                    <i> "Ponga estilo de carta, ponga comillas, ponga mayúsculas, Estimado Juan, ponga dos 
+                        puntos, aparte, sangría, ponga primera letra mayúscula, te escribo esta carta, 
+                        ponga negrillas, de forma muy urgente, cierre negrilla, ya que no me has enviado..."
+                    </i>, etc.<br>
+                </dd>
+            </dl>
+            </p>
+            <h2>Clases de lenguajes de marcado</h2>
+            <p>
+                Se suele diferenciar entre tres clases de lenguajes de marcado, 
+                aunque en la práctica pueden combinarse varias clases en un mismo documento. 
+                Por ejemplo, el HTML contiene etiquetas puramente procedimentales, como la B 
+                de bold (negrita), junto con otras puramente descriptivas (BLOCKQUOTE, el atributo HREF). 
+                El HTML también incluye el elemento PRE, que indica que el texto debe representarse tal y 
+                como está escrito.
+            </p>
+
+            <h3>
+                Marcado de presentación
+            </h3>
+
+            <p>
+                El marcado de presentación es aquel que indica el formato del texto. 
+                Este tipo de marcado es útil para maquetar la presentación de un documento 
+                para su lectura, pero resulta insuficiente para el procesamiento automático de 
+                la información. El marcado de presentación resulta más fácil de elaborar, sobre 
+                todo para cantidades pequeñas de información. Sin embargo resulta complicado de
+                mantener o modificar, por lo que su uso se ha ido reduciendo en proyectos grandes 
+                en favor de otros tipos de marcado más estructurados.
+            </p>
+
+            <p>
+                Se puede tratar de averiguar la estructura de un documento 
+                de esta clase buscando pistas en el texto. Por ejemplo, el título 
+                puede ir precedido de varios saltos de línea (o renglón), y estar 
+                ubicado centrado en la página web. Varios programas pueden deducir 
+                la estructura del texto basándose en esta clase de datos, aunque el resultado 
+                suele ser bastante imperfecto. Un ejemplo de marcado de presentación, puede ser RTF.
+            </p>
+
+            <h3>
+                Marcado de procedimientos
+            </h3>
+
+            <p>
+                El marcado de procedimientos está enfocado hacia la 
+                presentación del texto, sin embargo, también es visible 
+                para el usuario que edita el texto. El programa que representa 
+                el documento debe interpretar el código en el mismo orden en que aparece. 
+                Por ejemplo, para formatear un título, debe haber una serie de directivas inmediatamente 
+                antes del texto en cuestión, indicándole al software instrucciones tales como centrar, 
+                aumentar el tamaño de la fuente, o cambiar a negrita. Inmediatamente después del título 
+                deberá haber etiquetas inversas que reviertan estos efectos. En sistemas más avanzados 
+                se utilizan macros o pilas que facilitan el trabajo.
+            </p>
+
+            <p>
+                Algunos ejemplos de marcado de procedimientos son nroff, troff, TeX. Este tipo de 
+                marcado se ha usado extensivamente en aplicaciones de edición profesional, manipulados 
+                por tipógrafos calificados, ya que puede llegar a ser extremadamente complejo.
+            </p>
+
+            <h3>
+                Marcado descriptivo
+            </h3>
+
+            <p>
+                El marcado descriptivo o semántico utiliza etiquetas para describir los fragmentos 
+                de texto, pero sin especificar cómo deben ser representados, o en qué orden. Los 
+                lenguajes expresamente diseñados para generar marcado descriptivo son el SGML y el XML.
+            </p>
+
+            <p>
+                Las etiquetas pueden utilizarse para añadir al contenido cualquier clase de metadatos. 
+                Por ejemplo, el estándar Atom, un lenguaje de sindicación, proporciona un método para 
+                marcar la hora «actualizada», que es el dato facilitado por el editor de cuándo ha sido 
+                modificada por última vez cierta información. El estándar no especifica cómo se debe 
+                representar, o siquiera si se debe representar. El software puede emplear este dato de 
+                múltiples maneras, incluyendo algunas no previstas por los diseñadores del estándar.
+            </p>
+
+            <p>
+                Una de las virtudes del marcado descriptivo es su flexibilidad: los fragmentos de 
+                texto se etiquetan tal como son, y no tal como deben aparecer. Estos fragmentos 
+                pueden utilizarse para más usos de los previstos inicialmente. Por ejemplo, los 
+                hiperenlaces fueron diseñados en un principio para que un usuario que lee el texto 
+                los pulse. Sin embargo, los buscadores los emplean para localizar nuevas páginas 
+                con información relacionada, o para evaluar la popularidad de determinado sitio web.
+            </p>
+
+            <p>
+                El marcado descriptivo también simplifica la tarea de reformatear un texto, 
+                debido a que la información del formato está separada del propio contenido. 
+                Por ejemplo, un fragmento indicado como cursiva (<i>texto</i>), puede emplearse 
+                para marcar énfasis o bien para señalar palabras en otro idioma. Esta ambigüedad, 
+                presente en el marcado presentacional y en el procedimental, no puede soslayarse 
+                más que con una tediosa revisión a mano. Sin embargo, si ambos casos se hubieran 
+                diferenciado descriptivamente con etiquetas distintas, podrían representarse de 
+                manera diferente sin esfuerzo.
+            </p>
+
+            <p>
+                El marcado descriptivo está evolucionando hacia el marcado genérico. Los nuevos 
+                sistemas de marcado descriptivo estructuran los documentos en árbol, con la 
+                posibilidad de añadir referencias cruzadas. Esto permite tratarlos como bases 
+                de datos, en las que el propio almacenamiento tiene en cuenta la estructura, no 
+                como en los grandes objetos binarios (blobs) como en el pasado. Estos sistemas 
+                no tienen un esquema estricto como las bases relacionales, por lo que a menudo se 
+                las considera bases semiestructuradas.
+            </p>
+        </article>
+    </section>
+
+    <div include-html="footer.html"></div>
+</div>
+
+<script src="../js/include-html.js"></script>
+
+</body>
+</html>
