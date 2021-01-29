@@ -1,0 +1,46 @@
+/*Este archivo contendra los estilos compartidos de la web*/
+html,body{
+    margin: 0;  /*Reseteamos el margen y el padding para que el navegador*/
+    padding: 0; /*No ponga ninguno por defecto*/
+    font-family: $regular-font;
+    background-image: url("../img/bg-pattern.jpg");
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto; /*Con esto centramos el div*/
+}
+
+.text-secondary{
+    color: $secondary-color;
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    color: $primary-color;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+a:hover{
+    color: $primary-color-dark;
+}
+
+h3{
+    margin: 0px;
+    color: $secondary-color;
+}
+
+%size-h1-p{
+    h1{
+        font-size: 25px;
+    }
+    p{
+        margin: 5px 0;
+    }
+}
