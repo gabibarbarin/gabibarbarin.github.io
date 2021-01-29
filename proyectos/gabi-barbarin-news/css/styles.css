@@ -1,0 +1,339 @@
+/*Para cambiar los colores de TODA la pagina solo hay que clonar este archivo con otro nombre, 
+cambiarle los colores e importarlo en el archivo "styles.css". Con eso nos ahorramos mucho 
+trabajo.*/
+/* Este archivo contendra las fuentes de la web*/
+@font-face {
+  font-family: "NunitoSans-Regular";
+  src: url("../fonts/NunitoSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NunitoSans-Bold";
+  src: url("../fonts/NunitoSans-Bold.ttf");
+}
+
+/*Este archivo contendra los estilos compartidos de la web*/
+html, body {
+  margin: 0;
+  /*Reseteamos el margen y el padding para que el navegador*/
+  padding: 0;
+  /*No ponga ninguno por defecto*/
+  font-family: "NunitoSans-Regular", Arial, Helvetica, sans-serif;
+  background-image: url("../img/bg-pattern.jpg");
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  /*Con esto centramos el div*/
+}
+
+.text-secondary {
+  color: #F7C4A5;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: #B8EBD0;
+  text-decoration: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+a:hover {
+  color: #3F7CAC;
+}
+
+h3 {
+  margin: 0px;
+  color: #F7C4A5;
+}
+
+.content #article-1 h1, .content #article-2 h1, .content #article-3 h1, .content #article-4 h1 {
+  font-size: 25px;
+}
+
+.content #article-1 p, .content #article-2 p, .content #article-3 p, .content #article-4 p {
+  margin: 5px 0;
+}
+
+header {
+  float: left;
+  width: 100%;
+  font-family: "NunitoSans-Bold", Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 15px 0;
+}
+
+header img {
+  width: 150px;
+}
+
+header h1 {
+  letter-spacing: -1.5px;
+  word-spacing: 2px;
+  font-size: 50px;
+  margin: 0px;
+  text-shadow: 2px 2px 5px #6F789B;
+  /*Dist Dist Difuminacion*/
+  color: #B8EBD0;
+}
+
+#main-menu {
+  float: left;
+  width: 100%;
+  background-color: #B8EBD0;
+  -webkit-box-shadow: 2px 2px 5px #6F789B;
+          box-shadow: 2px 2px 5px #6F789B;
+  text-transform: uppercase;
+}
+
+#main-menu > ul > li {
+  float: left;
+  margin: 10px 0;
+}
+
+#main-menu > ul > li > a {
+  color: white;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-right: solid 1px #6F789B;
+}
+
+#main-menu > ul > li > a:hover {
+  background-color: #3F7CAC;
+}
+
+#main-menu > ul > li > ul {
+  display: none;
+  position: absolute;
+  margin-top: 10px;
+}
+
+#main-menu > ul > li > ul > li > a {
+  display: block;
+  color: white;
+  background-color: #F7C4A5;
+  padding: 13px;
+  font-size: 13px;
+  border-top: solid 1px #6F789B;
+}
+
+#main-menu > ul > li > ul > li > a:hover {
+  background-color: #904E55;
+}
+
+#main-menu > ul > li:hover > ul {
+  display: block;
+  -webkit-box-shadow: 2px 2px 5px #6F789B;
+          box-shadow: 2px 2px 5px #6F789B;
+}
+
+@media (max-width: 700px) {
+  #main-menu > ul > li {
+    width: 100%;
+    margin: 0;
+    border-bottom: solid 1px #6F789B;
+  }
+  #main-menu > ul > li > a {
+    text-align: center;
+    display: block;
+  }
+  #main-menu > ul > li > ul {
+    width: 100%;
+    margin: 0;
+    border-bottom: solid 1px #6F789B;
+  }
+  #main-menu > ul > li > ul > li {
+    text-align: center;
+  }
+}
+
+aside {
+  float: left;
+  width: 300px;
+  background-color: white;
+  margin-top: 40px;
+  padding: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: solid 1px #6F789B;
+  -webkit-box-shadow: 2px 2px 5px #6F789B;
+          box-shadow: 2px 2px 5px #6F789B;
+}
+
+aside h3 {
+  background-color: #F7C4A5;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  border-top: solid 1px #904E55;
+  border-bottom: solid 1px #904E55;
+  text-align: center;
+  padding: 5px 0;
+  font-family: "NunitoSans-Bold", Arial, Helvetica, sans-serif;
+}
+
+aside div form input {
+  display: block;
+}
+
+aside blockquote {
+  margin: 0;
+  font-style: italic;
+  color: #3B3F68;
+}
+
+.widget {
+  margin-bottom: 60px;
+}
+
+.widget form input[type="email"], .widget form input[type="password"] {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.widget form input[type="submit"] {
+  background-color: #B8EBD0;
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.widget form input[type="submit"]:hover {
+  background-color: #3F7CAC;
+  cursor: pointer;
+}
+
+.widget ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+.widget ul li {
+  margin: 15px 0;
+}
+
+@media (max-width: 700px) {
+  aside {
+    width: 100%;
+  }
+}
+
+.content {
+  float: left;
+  width: calc(100% - 300px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 20px;
+  margin-top: 40px;
+}
+
+.content h1 {
+  text-transform: uppercase;
+  color: #F7C4A5;
+  font-size: 30px;
+  margin: 0 0 25px 0;
+  text-shadow: 2px 2px 5px #6F789B;
+}
+
+.content article {
+  border: solid 1px #6F789B;
+  -webkit-box-shadow: 2px 2px 5px #6F789B;
+          box-shadow: 2px 2px 5px #6F789B;
+  background-color: white;
+  padding: 40px;
+  margin-bottom: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content article h2 {
+  margin: 0px;
+  color: #F7C4A5;
+}
+
+.content article a {
+  float: right;
+  font-size: 20px;
+  color: #3F7CAC;
+}
+
+#paginacion {
+  float: right;
+}
+
+#paginacion li {
+  display: inline-block;
+}
+
+#paginacion li a {
+  border: solid 1px #6F789B;
+  background-color: white;
+  padding: 7px 10px;
+  font-size: 15px;
+  color: #3F7CAC;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#paginacion li:hover a {
+  color: white;
+  background-color: #B8EBD0;
+  border: solid 1px #3B3F68;
+}
+
+@media (max-width: 700px) {
+  .content {
+    width: 100%;
+  }
+}
+
+.content #article-3 h2 {
+  font-size: 20px;
+}
+
+.content #article-4 dl dd {
+  margin-left: 10px;
+  color: grey;
+}
+
+footer {
+  float: left;
+  background-color: #3B3F68;
+  width: 100%;
+  margin-top: 40px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  -webkit-transition: .3;
+  transition: .3;
+}
+
+footer a:hover {
+  color: #6F789B;
+}
+
+footer div {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=styles.css.map */
