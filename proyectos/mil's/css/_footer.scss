@@ -1,0 +1,28 @@
+footer{
+    background-color: black;
+    color: white;
+
+    .container{
+        text-align: center;
+
+        img{
+            width: 70px;
+            margin: 15px 0;
+        }
+
+        h3{
+            font-size: 15px;
+            margin: 0;
+        }
+        p{
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: $primary-color;
+        }
+    }
+}
