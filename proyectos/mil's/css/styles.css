@@ -1,0 +1,427 @@
+/*Colores utilizados en la pagina*/
+/*Estilos comunes en toda la pagina*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html a, body a {
+  text-decoration: none;
+  color: #46ACC2;
+}
+
+html a:hover, body a:hover {
+  color: #498C8A;
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.row::after {
+  /*"limpiamos los elementos flotantes. para que ningun elemento se convierta en flotante*/
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Para moviles */
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Para moviles */
+@media only screen and (max-width: 600px) {
+  .col-xs-1 {
+    width: 8.33%;
+  }
+  /* 100% / 12 */
+  .col-xs-2 {
+    width: 16.66%;
+  }
+  .col-xs-3 {
+    width: 25%;
+  }
+  .col-xs-4 {
+    width: 33.33%;
+  }
+  .col-xs-5 {
+    width: 41.66%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-7 {
+    width: 58.33%;
+  }
+  .col-xs-8 {
+    width: 66.66%;
+  }
+  .col-xs-9 {
+    width: 75%;
+  }
+  .col-xs-10 {
+    width: 83.33%;
+  }
+  .col-xs-11 {
+    width: 91.66%;
+  }
+  .col-xs-12 {
+    width: 100%;
+  }
+}
+
+/* Para tablets */
+@media only screen and (min-width: 600px) {
+  .col-s-1 {
+    width: 8.33%;
+  }
+  /* 100% / 12 */
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+/*Para escritorio*/
+@media only screen and (min-width: 768px) {
+  .col-m-1 {
+    width: 8.33%;
+  }
+  /* 100% / 12 */
+  .col-m-2 {
+    width: 16.66%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33%;
+  }
+  .col-m-5 {
+    width: 41.66%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33%;
+  }
+  .col-m-8 {
+    width: 66.66%;
+  }
+  .col-m-9 {
+    width: 75%;
+  }
+  .col-m-10 {
+    width: 83.33%;
+  }
+  .col-m-11 {
+    width: 91.66%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .col-l-1 {
+    width: 8.33%;
+  }
+  /* 100% / 12 */
+  .col-l-2 {
+    width: 16.66%;
+  }
+  .col-l-3 {
+    width: 25%;
+  }
+  .col-l-4 {
+    width: 33.33%;
+  }
+  .col-l-5 {
+    width: 41.66%;
+  }
+  .col-l-6 {
+    width: 50%;
+  }
+  .col-l-7 {
+    width: 58.33%;
+  }
+  .col-l-8 {
+    width: 66.66%;
+  }
+  .col-l-9 {
+    width: 75%;
+  }
+  .col-l-10 {
+    width: 83.33%;
+  }
+  .col-l-11 {
+    width: 91.66%;
+  }
+  .col-l-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .col-xl-1 {
+    width: 8.33%;
+  }
+  /* 100% / 12 */
+  .col-xl-2 {
+    width: 16.66%;
+  }
+  .col-xl-3 {
+    width: 25%;
+  }
+  .col-xl-4 {
+    width: 33.33%;
+  }
+  .col-xl-5 {
+    width: 41.66%;
+  }
+  .col-xl-6 {
+    width: 50%;
+  }
+  .col-xl-7 {
+    width: 58.33%;
+  }
+  .col-xl-8 {
+    width: 66.66%;
+  }
+  .col-xl-9 {
+    width: 75%;
+  }
+  .col-xl-10 {
+    width: 83.33%;
+  }
+  .col-xl-11 {
+    width: 91.66%;
+  }
+  .col-xl-12 {
+    width: 100%;
+  }
+}
+
+#logo {
+  display: block;
+  text-align: center;
+}
+
+#main-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+#main-menu li {
+  margin: 20px 0;
+}
+
+#main-menu li a {
+  display: block;
+}
+
+#main-menu li > .active {
+  color: #498C8A;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+  #main-menu {
+    text-align: left;
+    margin-left: 15px;
+  }
+}
+
+.title-products {
+  text-align: center;
+  font-weight: lighter;
+  margin: 10px 0 30px 0;
+}
+
+form .search-input {
+  float: left;
+  border: none;
+  border-bottom: solid 1px #4B6858;
+  color: #4B6858;
+  width: 50%;
+  padding: 10px;
+  outline: 0;
+}
+
+.select-order {
+  float: right;
+  padding: 10px;
+  border: solid 1px white;
+  outline: none;
+  cursor: pointer;
+}
+
+.product-box {
+  text-align: center;
+  color: black;
+}
+
+.product-box img {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.product-box img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(1.05);
+          filter: brightness(1.05);
+}
+
+.product-box h3 {
+  font-weight: normal;
+  font-size: 15px;
+  margin: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-box .offer {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: red;
+}
+
+.product-box .hidden {
+  visibility: hidden;
+}
+
+.product-box strong {
+  font-size: 18px;
+}
+
+.product-box strong del {
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.product-box:hover {
+  color: #46ACC2;
+  text-decoration: none;
+}
+
+.pagination {
+  list-style-type: none;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.pagination li {
+  display: inline-block;
+}
+
+.pagination li a {
+  margin: 0;
+  padding: 5px 10px;
+  color: #46ACC2;
+}
+
+.pagination li a:hover {
+  color: #4B6858;
+  text-decoration: none;
+}
+
+.pagination li a.active {
+  border: solid 1px #4B6858;
+}
+
+aside {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+aside .content-aside {
+  margin: 15px 0;
+}
+
+aside .content-aside a:hover {
+  text-decoration: none;
+}
+
+aside .content-aside p {
+  margin: 0px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer .container {
+  text-align: center;
+}
+
+footer .container img {
+  width: 70px;
+  margin: 15px 0;
+}
+
+footer .container h3 {
+  font-size: 15px;
+  margin: 0;
+}
+
+footer .container p {
+  margin: 0;
+}
+
+footer .container a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .container a:hover {
+  color: #46ACC2;
+}
+/*# sourceMappingURL=styles.css.map */
