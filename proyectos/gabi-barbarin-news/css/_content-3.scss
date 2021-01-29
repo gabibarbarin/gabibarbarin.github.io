@@ -1,0 +1,8 @@
+.content{
+    #article-3{
+        @extend %size-h1-p;
+        h2{
+            font-size: 20px;
+        }
+    }
+}
