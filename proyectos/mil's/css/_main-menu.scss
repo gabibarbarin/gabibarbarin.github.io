@@ -1,0 +1,30 @@
+#logo{
+    display: block;
+    text-align: center;
+}
+#main-menu{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+
+        li{
+            margin: 20px 0;
+
+            a{
+                display: block;
+            }
+            
+                >.active{
+                    color: $primary_color_dark;
+                    text-decoration: underline;
+                }
+        }
+}
+
+@media only screen and (min-width: 768px){
+    #main-menu{
+        text-align: left;
+        margin-left: 15px;
+    }
+}
