@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: all .4s;
+}
+a:hover{
+    color: $primary-color-dark;
+
+}
+
+ul{
+    list-style-type: none;
+
+    a:hover{
+        background-color: $secondary-color;
+    }
+}
+
+img{
+    border-radius: 10px;
+}
+
+@mixin text-general {
+    font-size: 13px;
+    margin: 0;  
+}
+
+@mixin color-mayus {
+    color: $primary-color-dark;
+    text-transform: uppercase;
+}
+
+.titles{
+    @include color-mayus;
+    font-size: 20px;
+}
+
+.titles-second{
+    @include color-mayus;
+    font-size: 15px;
+}
+
