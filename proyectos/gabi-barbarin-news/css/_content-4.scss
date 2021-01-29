@@ -1,0 +1,11 @@
+.content{
+    #article-4{
+        @extend %size-h1-p;
+        dl{
+            dd{
+                margin-left: 10px;
+                color: grey;
+            }
+        }
+    }
+}
