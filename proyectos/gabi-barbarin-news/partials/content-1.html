@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css"/>
+    <title>Gabi Barbarin News</title>
+</head>
+<body>
+    <div class="container">
+
+        <div include-html="header.html"></div>
+        <div include-html="main-menu.html"></div>
+        <div include-html="aside.html"></div>
+        <section class="content">
+            <article id="article-1">
+                <h1>El desarrollo web no es más que copiar y pegar</h1>
+                <p>
+                    Hoy en día es impensable crear un proyecto web sin utilizar algún tipo de gestor 
+                    de paquetes,
+                    como puede ser el NPM para javascript o Composer para las dependencias de PHP.
+                </p>
+                <p>
+                    Y es que cuando queremos hacer algo que requiere un poquito más de complejidad 
+                    siempre hay alguien que ya lo ha hecho antes, y para nosotros es tan fácil como 
+                    agregar un nuevo paquete a las dependencias y usarlo.
+                </p>
+                <p>
+                    ¿Quiere decir esto, que el desarrollo web se ha convertido en un simple copiar y pegar?<br>
+                    Algunos desarrolladores prefieren escribir todo el código desde cero, no les 
+                    gusta usar paquetes ya hechos. Prefieren conocer bien todo el código que se 
+                    encuentra en su aplicación web. Y esto está bien, así siempre vas a tener un 
+                    poco de más control sobre lo que se haga.
+                </p>
+                <p>
+                    Yo al principio era un poco así, me gustaba programarlo todo desde cero
+                    ¿qué es eso de usar código de otro? ¿es que no eres lo suficientemente 
+                    bueno como programador?
+                    Pero al final, cuando vas adquiriendo más experiencia, ves que todo el mundo 
+                    lo hace así, que los profesionales del sector usan paquetes, es como todo el 
+                    mundo trabaja. Y al final...
+                    Te conviertes en uno de ellos… usas paquetes de dependencias
+                    Y si no buscad, prácticamente cualquier tutorial que encontréis por internet 
+                    empieza diciendo que instales unas librerías u otras.
+                </p>
+                <p>
+                    Y una vez que empiezas a usar este tipo de dependencias…
+                    Te das cuenta de lo poderoso que puede llegar a ser
+                    En vez de pasarte horas y horas intentando solucionar un problema, puedes usar 
+                    un paquete que te lo solucione por tí.
+                </p>
+                <p>
+                    Los paquetes son tiempo de desarrollo ganado. No necesitas demostrarle a nadie 
+                    lo bueno que eres programando como para hacer todo desde cero.
+                </p>
+                <p>
+                    Sé inteligente, aprovecha tiempo que te da usar estos paquetes para que las 
+                    cosas que tú desarrolles queden mejor.
+                </p>
+                <p>
+                    Pero como todo en la vida, la virtud está en el término medio.
+                </p>
+                <p>
+                    Y es que abusar de utilizar paquetes para absolutamente todo, y meterle 
+                    dependencias a tu proyectos hasta para el más mínimo detalle para algo que 
+                    podrías programar en dos líneas. Puede hacer que tu vida de desarrollador se convierta...<br>
+                    En un infierno, un infierno de dependencias
+                </p>
+                <p>
+                    Puedes acabar con una carpeta de dependencias, tan grande, con dependencias 
+                    recursivas, y que por mucho minificado que le metas a tu proyecto, vas a tener 
+                    todo un monstruo.
+                </p>
+                <p>
+                    No seas demasiado codicioso con los paquetes, o estos, se volverán contra ti
+                    Si usa paquetes, revisa que características de estos usas, porque hay muchos que
+                    te dejan importar sólo lo que utilizas, en vez de tener todo código de cosas que 
+                    nunca vas a usar. Así el usuario en su navegador no tiene que descargarse archivos 
+                    innecesarios.
+                </p>
+                <p>
+                    Si utilizas paquetes para desarrollo, asegúrate de que no los incluyes en producción.<br>
+                    Gestores como NPM ofrecen la posibilidad de especificar cuáles de las dependencias 
+                    son para producción y cuales para desarrollo, asegúrate de que no usas las de 
+                    desarrollo en producción.
+                </p>
+                <p>
+                    En definitiva
+                </p>
+                <p>
+                    Creo que deberías de usar paquetes y aprender la mejor forma de usarlos. Pensar 
+                    bien qué características del paquete vas a incluir y si es necesario o no incluirlas 
+                    todas. Y sobre todo, intenta no caer en ese agujero negro de dependencias del que 
+                    difícilmente, vas a poder salir.
+                </p>
+            </article>
+        </section>
+        <div include-html="footer.html"></div>
+        
+    </div>
+    <script src="../js/include-html.js"></script>
+</body>
+</html>
