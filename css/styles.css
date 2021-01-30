@@ -158,7 +158,7 @@ article #container-sm .container-img-fig .container-fig {
 }
 
 article #container-sm .container-img-fig .container-fig figcaption {
-  font-family: "SourceSansPro-regular";
+  font-family: "SourceSansPro-regular", sans-serif, Tahoma, Geneva, Verdana;
   width: 200px;
   font-size: 20px;
   word-spacing: 10px;
@@ -179,7 +179,7 @@ article #container-sm .mini-explanation {
 }
 
 article #container-sm .mini-explanation > p {
-  font-family: "SourceSansPro-regular";
+  font-family: "SourceSansPro-regular", sans-serif, Tahoma, Geneva, Verdana;
   width: 40%;
   display: block;
   margin: -40px 5% 0 55%;
@@ -228,7 +228,7 @@ article #container-sm .mini-explanation > p > a {
     margin: 15px 0 0 5%;
   }
   article #container-sm .container-img-fig .container-fig figcaption {
-    font-family: "SourceSansPro-regular";
+    font-family: "SourceSansPro-regular", sans-serif, Tahoma, Geneva, Verdana;
     -webkit-transform: none;
             transform: none;
     margin: 0;
@@ -349,5 +349,101 @@ article #container-sm .mini-explanation > p > a {
   #container-projects .explanation-projects p {
     font-size: 15px;
   }
+}
+
+#container-contact {
+  background-color: #BED8D4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+}
+
+#container-contact .divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#container-contact .divider .form-and-p {
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%;
+  padding: 20px;
+}
+
+#container-contact .divider .form-and-p p {
+  font-size: 20px;
+}
+
+#container-contact .divider .form-and-p #form-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  background-color: #D6FFB7;
+  font-family: "SourceSansPro-light", sans-serif, Tahoma, Geneva, Verdana;
+}
+
+#container-contact .divider .form-and-p #form-contact div {
+  margin: 10px 0;
+}
+
+#container-contact .divider .form-and-p #form-contact div label {
+  display: block;
+  font-size: 20px;
+}
+
+#container-contact .divider .form-and-p #form-contact div input[type=text], #container-contact .divider .form-and-p #form-contact div input[type=email], #container-contact .divider .form-and-p #form-contact div input[type=textarea] {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 15px;
+  font-family: "SourceSansPro-regular", sans-serif, Tahoma, Geneva, Verdana;
+  background-color: white;
+  border: none;
+  border-bottom: solid 1px #1F1F1F;
+  border-radius: .5px;
+  outline: none;
+}
+
+#container-contact .divider .form-and-p #form-contact input[type=submit] {
+  display: block;
+  width: 120px;
+  margin-top: 20px;
+  padding: 10px 0;
+  cursor: pointer;
+  border: none;
+  background-color: #817E9F;
+  font-family: "SourceSansPro-regular", sans-serif, Tahoma, Geneva, Verdana;
+  font-size: 20px;
+  color: white;
+}
+
+#container-contact .divider .other-methods {
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  text-align: center;
+  padding: 0 60px;
+  margin-top: 12%;
+}
+
+#container-contact .divider .other-methods p {
+  font-size: 17px;
+}
+
+#container-contact .divider .other-methods a img {
+  width: 50px;
 }
 /*# sourceMappingURL=styles.css.map */
