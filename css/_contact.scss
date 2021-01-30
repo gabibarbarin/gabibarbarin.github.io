@@ -1,0 +1,77 @@
+#container-contact{
+    background-color: $primary-color-clear;
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+
+    .divider{
+        display: flex;
+
+        .form-and-p{
+            flex: 70%;
+            padding: 20px;
+
+            p{
+                font-size: 20px;
+            }
+
+            #form-contact{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 10px;
+                background-color: $secondary-color-clear;
+                font-family: $primary-font;
+
+                div{
+                    margin: 10px 0;
+                    label{
+                        display: block;
+                        font-size: 20px;
+                    }
+
+                    input[type=text], input[type=email], input[type=textarea]{
+                        width: 100%;
+                        padding: 5px 0;
+                        font-size: 15px;
+                        font-family: $primary-font-dark;
+                        background-color: white;
+                        border: none;
+                        border-bottom: solid 1px $primary-color-str-dark;
+                        border-radius: .5px;
+                        outline: none;
+                    }
+                }
+
+                input[type=submit]{
+                    display: block;
+                    width: 120px;
+                    margin-top: 20px;
+                    padding: 10px 0;
+                    cursor: pointer;
+                    border: none;
+                    background-color: $secondary-color-str-dark;
+                    font-family: $primary-font-dark;
+                    font-size: 20px;
+                    color: white;
+                
+                }
+            }
+        }
+        .other-methods{
+            flex: 30%;
+            text-align: center;
+            padding: 0 60px;
+            margin-top: 12%;
+
+            p{
+                font-size: 17px;
+            }
+            a{ 
+                img{
+                    width: 50px;
+                }
+            }
+        }
+    }
+}
