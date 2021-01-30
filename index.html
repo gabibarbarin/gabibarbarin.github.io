@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript"> (function() { emailjs.init("user_MhBpz7Sr0xI3HA57O1df6"); })(); </script>
 
     <title>Gabriel Barbarin ~ Desarrollador Web</title>
     <link rel="icon" type="img/png" href="./img/favicon2.png">
@@ -15,10 +17,51 @@
 
     <header include-html="./partials/header.html"></header>
     <article include-html="./partials/sobre-mi.html"></article>
-    <article include-html="./partials/projects.html"></article>
+    <article include-html="./partials/projects.html"></article> 
+    <section id="container-contact">
+        
+        <div class="divider">
+            <h1 class="title-section">Contacto</h1>
+        </div>
+
+        <div class="divider">
+
+            <div class="form-and-p">
+                <p>Podés rellar este formulario para enviarme un correo electrónico</p>
+                <form id="form-contact">
+            
+                    <div>
+                        <label for="from_name">Nombre</label>
+                        <input type="text" name="from_name" id="from_name">
+                    </div>
+            
+                    <div>
+                        <label for="from_email">Email</label>
+                        <input type="email" name="from_email" id="from_email">
+                    </div>
+            
+                    <div>
+                        <label for="mensaje">Mensaje</label>
+                        <input type="textarea" name="mensaje" id="mensaje">
+                    </div>
+            
+                    <input type="submit" id="button" value="Enviar" form="form-contact">
+                </form>
+            </div>
+
+            <div class="other-methods">
+                <p>O podés comunicarte por cualquiera de estos medios:</p>
+                <a href="https://www.linkedin.com/in/gabrielbarbarin/"><img src="./img/icon-linkedin.png" alt="linkedin Gabriel Barbarin" width="100px"></a>
+                <a href="https://wa.me/+5492236896553"><img src="./img/icon-whatsapp.png" alt="linkedin Gabriel Barbarin" width="100px"></a>
+                <a href="https://www.instagram.com/gabibarbarin/"><img src="./img/icon-instagram.png" alt="linkedin Gabriel Barbarin" width="100px"></a>
+            </div>
+        </div>
+    
+    </section>
 
 </div>
 
+    <script src="../js/emailjs.js"></script>
     <script src="./js/include-html.js"></script>
 
 </body>
