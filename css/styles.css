@@ -478,12 +478,14 @@ article #container-sm .mini-explanation > p > a {
   display: block;
 }
 
+/*  Escritorio  */
 @media only screen and (max-width: 1255px) {
   #container-contact .divider .other-methods {
     padding: 0;
   }
 }
 
+/*  Tablet y Movil  */
 @media only screen and (max-width: 768px) {
   #container-contact .divider {
     -ms-flex-wrap: wrap;
