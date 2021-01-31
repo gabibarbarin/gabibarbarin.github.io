@@ -13,6 +13,7 @@ emailjs.sendForm(serviceID, templateID, this)
   .then(() => {
     btn.value = 'Enviar';
     alert('¡Correo Enviado!');
+    document.getElementById("form-contact").reset();
   }, (err) => {
     btn.value = 'Enviar';
     alert(JSON.stringify(err));
