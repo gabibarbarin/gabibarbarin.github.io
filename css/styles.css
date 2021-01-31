@@ -379,6 +379,7 @@ article #container-sm .mini-explanation > p > a {
 }
 
 #container-contact .divider .form-and-p p {
+  margin-top: 0;
   font-size: 20px;
 }
 
@@ -391,8 +392,8 @@ article #container-sm .mini-explanation > p > a {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  padding: 10px;
-  background-color: #D6FFB7;
+  padding: 0 10px 10px 10px;
+  background-color: #FFEDE1;
   font-family: "SourceSansPro-light", sans-serif, Tahoma, Geneva, Verdana;
 }
 
@@ -405,16 +406,35 @@ article #container-sm .mini-explanation > p > a {
   font-size: 20px;
 }
 
-#container-contact .divider .form-and-p #form-contact div input[type=text], #container-contact .divider .form-and-p #form-contact div input[type=email], #container-contact .divider .form-and-p #form-contact div input[type=textarea] {
+#container-contact .divider .form-and-p #form-contact div input[type=text], #container-contact .divider .form-and-p #form-contact div input[type=email] {
   width: 100%;
-  padding: 5px 0;
-  font-size: 15px;
+  padding: 5px 5px;
+  font-size: 100%;
   font-family: "SourceSansPro-regular", sans-serif, Tahoma, Geneva, Verdana;
   background-color: white;
   border: none;
-  border-bottom: solid 1px #1F1F1F;
+  border-bottom: solid 1px #8ea09d;
   border-radius: .5px;
   outline: none;
+}
+
+#container-contact .divider .form-and-p #form-contact div textarea {
+  width: 100%;
+  padding: 5px 5px;
+  font-size: 100%;
+  font-family: "SourceSansPro-regular", sans-serif, Tahoma, Geneva, Verdana;
+  background-color: white;
+  border: none;
+  border-bottom: solid 1px #8ea09d;
+  border-radius: .5px;
+  outline: none;
+  overflow: auto;
+  resize: vertical;
+  overflow-wrap: break-word;
+}
+
+#container-contact .divider .form-and-p #form-contact span {
+  font-size: 25px;
 }
 
 #container-contact .divider .form-and-p #form-contact input[type=submit] {
@@ -428,6 +448,12 @@ article #container-sm .mini-explanation > p > a {
   font-family: "SourceSansPro-regular", sans-serif, Tahoma, Geneva, Verdana;
   font-size: 20px;
   color: white;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+#container-contact .divider .form-and-p #form-contact input[type=submit]:hover {
+  background-color: #9895B1;
 }
 
 #container-contact .divider .other-methods {
@@ -436,14 +462,67 @@ article #container-sm .mini-explanation > p > a {
           flex: 30%;
   text-align: center;
   padding: 0 60px;
-  margin-top: 12%;
+  margin: auto;
 }
 
 #container-contact .divider .other-methods p {
+  font-family: "SourceSansPro-regular", sans-serif, Tahoma, Geneva, Verdana;
   font-size: 20px;
 }
 
 #container-contact .divider .other-methods a img {
-  width: 50px;
+  width: 60px;
+}
+
+#container-contact .divider .other-methods #icon-linkedin {
+  display: block;
+}
+
+@media only screen and (max-width: 1255px) {
+  #container-contact .divider .other-methods {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #container-contact .divider {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #container-contact .divider .form-and-p {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+  #container-contact .divider .form-and-p #form-contact input[type=submit] {
+    margin-top: 20px;
+    width: 100px;
+    font-size: 15px;
+  }
+  #container-contact .divider .other-methods {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    padding: 0;
+  }
+  #container-contact .divider .other-methods p {
+    margin-top: 0;
+  }
+  #container-contact .divider .other-methods a img {
+    width: 50px;
+  }
+  #container-contact .divider .other-methods #icon-linkedin {
+    display: inline-block;
+  }
+}
+
+#container-footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#container-footer a {
+  font-family: "SourceSansPro-regular", sans-serif, Tahoma, Geneva, Verdana;
+  color: #1F1F1F;
 }
 /*# sourceMappingURL=styles.css.map */
