@@ -80,9 +80,14 @@ header .container-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  justify-items: initial;
   margin-right: 15%;
   padding: 20px 0;
 }
@@ -143,6 +148,10 @@ article #container-sm {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  justify-items: initial;
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
@@ -192,9 +201,14 @@ article #container-sm .mini-explanation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  justify-items: initial;
 }
 
 article #container-sm .mini-explanation > p {
@@ -273,11 +287,16 @@ article #container-sm .mini-explanation > p > a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  justify-items: initial;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: #BED8D4;
 }
 
@@ -296,6 +315,10 @@ article #container-sm .mini-explanation > p > a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  justify-items: initial;
   -webkit-box-flex: 45%;
       -ms-flex: 45%;
           flex: 45%;
@@ -323,6 +346,10 @@ article #container-sm .mini-explanation > p > a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  justify-items: initial;
 }
 
 #container-projects .project-container .text-project h2 {
@@ -371,7 +398,6 @@ article #container-sm .mini-explanation > p > a {
 }
 
 #container-contact {
-  background-color: #BED8D4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,9 +405,14 @@ article #container-sm .mini-explanation > p > a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  justify-items: initial;
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
+  background-color: #BED8D4;
 }
 
 #container-contact .divider {
@@ -410,6 +441,10 @@ article #container-sm .mini-explanation > p > a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  justify-items: initial;
   width: 100%;
   padding: 0 10px 10px 10px;
   background-color: #FFEDE1;
@@ -461,12 +496,12 @@ article #container-sm .mini-explanation > p > a {
   width: 120px;
   margin-top: 20px;
   padding: 10px 0;
-  cursor: pointer;
   border: none;
-  background-color: #817E9F;
+  cursor: pointer;
   font-family: "SourceSansPro-regular", sans-serif, Tahoma, Geneva, Verdana;
   font-size: 20px;
   color: white;
+  background-color: #817E9F;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
@@ -524,7 +559,6 @@ article #container-sm .mini-explanation > p > a {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
-    padding: 0;
   }
   #container-contact .divider .other-methods p {
     margin-top: 0;
@@ -538,8 +572,8 @@ article #container-sm .mini-explanation > p > a {
 }
 
 #container-footer {
-  text-align: center;
   padding: 20px 0;
+  text-align: center;
 }
 
 #container-footer a {
