@@ -45,6 +45,9 @@ a:hover {
   color: #8ea09d;
 }
 
+/*  Mixin  */
+/*  Var  */
+/*  Media  */
 @media only screen and (max-width: 768px) {
   .title-section {
     font-size: 40px;
@@ -165,8 +168,8 @@ article #container-sm .container-img-fig .img-container .img-sm {
   width: 100%;
   display: block;
   max-height: 1280px;
-  -webkit-box-shadow: 2px 2px 5px #3D3D3D;
-          box-shadow: 2px 2px 5px #3D3D3D;
+  -webkit-box-shadow: 2px 2px 5px #1F1F1F;
+          box-shadow: 2px 2px 5px #1F1F1F;
 }
 
 article #container-sm .container-img-fig .container-fig {
@@ -272,10 +275,10 @@ article #container-sm .mini-explanation > p > a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #BED8D4;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #BED8D4;
 }
 
 #container-projects > .title-section {
@@ -320,9 +323,6 @@ article #container-sm .mini-explanation > p > a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 #container-projects .project-container .text-project h2 {
@@ -348,7 +348,7 @@ article #container-sm .mini-explanation > p > a {
 /*  Tablet  */
 @media only screen and (max-width: 768px) {
   #container-projects > .title-section {
-    margin-left: -36px;
+    margin-left: -46px;
   }
   #container-projects .project-container .text-project h2 {
     font-size: 20px;
@@ -361,15 +361,12 @@ article #container-sm .mini-explanation > p > a {
 /*  Movil  */
 @media only screen and (max-width: 600px) {
   #container-projects > .title-section {
-    margin-left: 5%;
+    margin-left: -5%;
   }
   #container-projects .project-container {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
-  }
-  #container-projects .explanation-projects p {
-    font-size: 15px;
   }
 }
 
