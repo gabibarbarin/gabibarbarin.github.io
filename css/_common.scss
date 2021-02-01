@@ -33,6 +33,16 @@ a:hover{
     color: $primary-color-str-clear;
 }
 
+/*  Mixin  */
+@mixin flex-direction($displey,$direccion) {
+    display: $displey;
+    flex-direction: $direccion;
+}
+
+/*  Var  */
+$box-shadow: 2px 2px 5px $primary-color-str-dark;
+
+/*  Media  */
 @media only screen and (max-width:768px){
     .title-section{
         font-size: 40px;
