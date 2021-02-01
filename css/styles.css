@@ -156,9 +156,12 @@ article #container-sm .container-img-fig {
 
 article #container-sm .container-img-fig .img-container {
   width: 36vw;
+  max-width: 505.8px;
 }
 
 article #container-sm .container-img-fig .img-container .img-sm {
+  -o-object-fit: fill;
+     object-fit: fill;
   width: 100%;
   display: block;
   max-height: 1280px;
