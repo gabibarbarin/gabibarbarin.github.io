@@ -2,18 +2,18 @@ header{
         position: relative;
         z-index: 1;
         background-color: white;
+
     .menu-icon{
         width: 40px;
     }
     .container-nav{
-        display: flex;
-        justify-content: flex-end;
+        @include flex-direction-justify(flex,row,flex-end,initial);
         margin-right:15%;
         padding:  20px 0;
 
         >div:nth-child(0n + 2){
-            border-right: solid 1px $secondary-color-str-clear;
-            border-left: solid 1px $secondary-color-str-clear;
+            border-right: $border-1px;
+            border-left: $border-1px;
         }
     }
 
