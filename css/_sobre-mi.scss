@@ -19,7 +19,9 @@ article{
 
             .img-container{
                 width: 36vw;
+                max-width: 505.8px;
                 .img-sm{
+                    object-fit: fill;
                     width: 100%;
                     display: block;
                     max-height: 1280px;
