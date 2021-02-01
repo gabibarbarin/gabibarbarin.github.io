@@ -34,13 +34,29 @@ a:hover{
 }
 
 /*  Mixin  */
-@mixin flex-direction($displey,$direccion) {
+@mixin flex-direction-justify($displey,$direccion,$contenido,$items) {
     display: $displey;
     flex-direction: $direccion;
+    justify-content: $contenido;
+    justify-items: $items;
+}
+@mixin style-inputs {
+    width: 100%;
+    padding: 5px 5px;
+
+    font-size: 100%;
+    font-family: $primary-font-dark;
+
+    background-color: white;
+    border: none;
+    border-bottom: solid 1px $primary-color-str-clear;
+    border-radius: .5px;
+    outline: none;
 }
 
 /*  Var  */
 $box-shadow: 2px 2px 5px $primary-color-str-dark;
+$border-1px: solid 1px $secondary-color-str-clear;
 
 /*  Media  */
 @media only screen and (max-width:768px){
