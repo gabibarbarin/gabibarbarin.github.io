@@ -7,7 +7,19 @@
     <div class="container-img-fig">
 
         <!--Agregar Picture en vez de img-->
-        <div class="img-container"><img class="img-sm" src="../img/header1.jpeg" alt="Gabriel Barbarin desarrollador web"></div>
+        <div class="img-container">
+            <picture>
+                <source class="img-sm" media="(min-width:768px)" srcset="../img/sm-escritorio.jpeg" 
+                    alt="Gabriel Barbarin Desarrollador Web" type="image/jpeg">
+                
+                <source class="img-sm" media="(min-width:601px)" srcset="../img/sm-tablet.jpeg" 
+                    alt="Gabriel Barbarin Desarrollador Web" type="image/jpeg">
+
+                <source class="img-sm" media="(max-width:600px)" srcset="../img/sm-movil.jpeg" 
+                    alt="Gabriel Barbarin Desarrollador Web" type="image/jpeg">
+                <img class="img-sm" src="../img/sm-escritorio.jpeg"  alt="Gabriel Barbarin Desarrollador Web">
+            </picture>
+        </div>
 
         <div class="container-fig">
             <figcaption>Desarrollador web</figcaption>
