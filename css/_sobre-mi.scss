@@ -1,3 +1,9 @@
+#return{
+    position: fixed;
+    right: 2%;
+    top: 2%;
+    z-index: 0;
+}
 article{
     #container-sm{
         background-color: $primary-color-clear;
@@ -53,6 +59,10 @@ article{
 
 /*  Tablets  */
 @media only screen and (max-width:768px){
+    #return{
+        top: 1%;
+        right: 1%;
+    }
     article{
         #container-sm{ 
 
