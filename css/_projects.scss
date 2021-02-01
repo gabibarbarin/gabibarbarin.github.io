@@ -1,8 +1,8 @@
 #container-projects{
     display: flex;
     flex-wrap: wrap;
-    background-color: $primary-color-clear;
     justify-content: center;
+    background-color: $primary-color-clear;
     
     >.title-section{
         flex: 100%;
@@ -10,11 +10,10 @@
     }
     
     .project-container{
-        display: flex;
-        flex-direction: column;
+        @include flex-direction(flex,column);
         flex: 45%;
         margin: 10px;
-        box-shadow: 2px 2px 5px $primary-color-str-dark;
+        box-shadow: $box-shadow;
         background-color: $primary-color-str-clear;
         text-align: center;
 
@@ -28,9 +27,7 @@
 
         .text-project{
             padding: 10px 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex-direction(flex,column);
             h2{
                 display: block;
                 margin: 0;
@@ -57,7 +54,7 @@
     #container-projects{
 
         >.title-section{
-            margin-left: -36px;
+            margin-left: -46px;
         }
 
         .project-container{        
@@ -80,15 +77,10 @@
     #container-projects{
 
         >.title-section{
-            margin-left: 5%;
+            margin-left: -5%;
         }
         .project-container{
             flex: 100%;
-        }
-        .explanation-projects{
-            p{
-                font-size: 15px;
-            }
         }
     }
 }
