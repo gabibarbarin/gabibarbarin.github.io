@@ -1,7 +1,7 @@
 #container-projects{
     @include flex-direction-justify(flex,row,center,initial);
     flex-wrap: wrap;
-    background-color: $primary-color-clear;
+    background-color: var(--background-color);
     
     >.title-section{
         flex: 100%;
@@ -13,7 +13,7 @@
         flex: 45%;
         margin: 10px;
         box-shadow: $box-shadow;
-        background-color: $primary-color-str-clear;
+        background-color: var(--background-project-color);
         text-align: center;
 
         a{
@@ -26,6 +26,7 @@
 
         .text-project{
             padding: 10px 0;
+            margin: auto;
             @include flex-direction-justify(flex,column,initial,initial);
             h2{
                 display: block;
@@ -66,6 +67,7 @@
         .explanation-projects{
             p{
                 font-size: 15px;
+                margin: 0 auto 20 auto;
             }
         }
     }
