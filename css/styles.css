@@ -1,3 +1,19 @@
+:root {
+  --background-header-color:#;
+  --background-color:#;
+  --background-color-project:#;
+  --background-form-color:#;
+  --background-input-color:#;
+  --letters-nav-color-hover:#;
+  --border-nav-color:#;
+  --border-nav-color-hover:#;
+  --font-color:#;
+  --button-form-color:#;
+  --button-form-color-hover:#;
+  --button-letter-color:#;
+  --button-letter-color-hover:#;
+}
+
 @font-face {
   font-family: 'SourceSansPro-light';
   src: url("../fonts/SourceSansPro-Light.ttf");
@@ -18,15 +34,21 @@ body, html {
   padding: 0;
   font-family: "SourceSansPro-light", sans-serif, Tahoma, Geneva, Verdana;
   scroll-behavior: smooth;
-}
-
-h1 {
-  font-family: "SourceSansPro-light", sans-serif, Tahoma, Geneva, Verdana;
+  background-color: var(--background-header-color);
 }
 
 .title-section {
+  font-family: "SourceSansPro-light", sans-serif, Tahoma, Geneva, Verdana;
   font-size: 54px;
   margin: 30px 0 60px -63px;
+}
+
+h1, h2, a {
+  color: var(--titles-color);
+}
+
+p, figcaption, label {
+  color: var(--font-color);
 }
 
 #global-container {
@@ -36,13 +58,16 @@ h1 {
 
 a {
   text-decoration: none;
-  color: #3D3D3D;
   -webkit-transition: all .0s;
   transition: all .0s;
 }
 
 a:hover {
-  color: #8ea09d;
+  color: var(--letters-nav-color-hover);
+}
+
+a:visited {
+  color: var(--font-color);
 }
 
 /*  Mixin  */
@@ -69,7 +94,7 @@ a:hover {
 header {
   position: relative;
   z-index: 1;
-  background-color: white;
+  background-color: var(--background-header-color);
 }
 
 header .menu-icon {
@@ -93,8 +118,8 @@ header .container-nav {
 }
 
 header .container-nav > div:nth-child(0n + 2) {
-  border-right: solid 1px #afcc99;
-  border-left: solid 1px #afcc99;
+  border-right: solid 1px var(--border-nav-color);
+  border-left: solid 1px var(--border-nav-color);
 }
 
 header .nav-button {
@@ -108,7 +133,27 @@ header .nav-button .link-button {
 }
 
 header .nav-button .link-button:hover {
-  border-color: #BED8D4;
+  border-color: var(--border-nav-color-hover);
+  color: var(--letters-nav-color-hover);
+}
+
+.container-themes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  justify-items: initial;
+  position: absolute;
+  left: 0%;
+  top: auto;
+  width: 100px;
+  color: var(--font-color);
 }
 
 /*  Tablets  */
@@ -140,7 +185,7 @@ header .nav-button .link-button:hover {
 }
 
 article #container-sm {
-  background-color: #BED8D4;
+  background-color: var(--background-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,8 +222,8 @@ article #container-sm .container-img-fig .img-container .img-sm {
   width: 100%;
   display: block;
   max-height: 1280px;
-  -webkit-box-shadow: 2px 2px 5px #1F1F1F;
-          box-shadow: 2px 2px 5px #1F1F1F;
+  -webkit-box-shadow: 2px 2px 5px var(--box-shadow-color);
+          box-shadow: 2px 2px 5px var(--box-shadow-color);
 }
 
 article #container-sm .container-img-fig .container-fig {
@@ -297,7 +342,7 @@ article #container-sm .mini-explanation > p > a {
   justify-items: initial;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #BED8D4;
+  background-color: var(--background-color);
 }
 
 #container-projects > .title-section {
@@ -323,9 +368,9 @@ article #container-sm .mini-explanation > p > a {
       -ms-flex: 45%;
           flex: 45%;
   margin: 10px;
-  -webkit-box-shadow: 2px 2px 5px #1F1F1F;
-          box-shadow: 2px 2px 5px #1F1F1F;
-  background-color: #8ea09d;
+  -webkit-box-shadow: 2px 2px 5px var(--box-shadow-color);
+          box-shadow: 2px 2px 5px var(--box-shadow-color);
+  background-color: var(--background-project-color);
   text-align: center;
 }
 
@@ -339,6 +384,7 @@ article #container-sm .mini-explanation > p > a {
 
 #container-projects .project-container .text-project {
   padding: 10px 0;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,6 +428,7 @@ article #container-sm .mini-explanation > p > a {
   }
   #container-projects .explanation-projects p {
     font-size: 15px;
+    margin: 0 auto 20 auto;
   }
 }
 
@@ -412,7 +459,7 @@ article #container-sm .mini-explanation > p > a {
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
-  background-color: #BED8D4;
+  background-color: var(--background-color);
 }
 
 #container-contact .divider {
@@ -447,8 +494,10 @@ article #container-sm .mini-explanation > p > a {
   justify-items: initial;
   width: 100%;
   padding: 0 10px 10px 10px;
-  background-color: #FFEDE1;
+  background-color: var(--background-form-color);
   font-family: "SourceSansPro-light", sans-serif, Tahoma, Geneva, Verdana;
+  -webkit-box-shadow: 2px 2px 5px var(--box-shadow-color);
+          box-shadow: 2px 2px 5px var(--box-shadow-color);
 }
 
 #container-contact .divider .form-and-p #form-contact div {
@@ -470,6 +519,7 @@ article #container-sm .mini-explanation > p > a {
   border-bottom: solid 1px #8ea09d;
   border-radius: .5px;
   outline: none;
+  background-color: var(--background-input-color);
 }
 
 #container-contact .divider .form-and-p #form-contact div textarea {
@@ -482,6 +532,7 @@ article #container-sm .mini-explanation > p > a {
   border-bottom: solid 1px #8ea09d;
   border-radius: .5px;
   outline: none;
+  background-color: var(--background-input-color);
   overflow: auto;
   resize: vertical;
   overflow-wrap: break-word;
@@ -500,14 +551,15 @@ article #container-sm .mini-explanation > p > a {
   cursor: pointer;
   font-family: "SourceSansPro-regular", sans-serif, Tahoma, Geneva, Verdana;
   font-size: 20px;
-  color: white;
-  background-color: #817E9F;
+  color: var(--button-letter-color);
+  background-color: var(--button-form-color);
   -webkit-transition: all .4s;
   transition: all .4s;
 }
 
 #container-contact .divider .form-and-p #form-contact input[type=submit]:hover {
-  background-color: #9895B1;
+  background-color: var(--button-form-color-hover);
+  color: var(--button-letter-color-hover);
 }
 
 #container-contact .divider .other-methods {
@@ -578,6 +630,5 @@ article #container-sm .mini-explanation > p > a {
 
 #container-footer a {
   font-family: "SourceSansPro-regular", sans-serif, Tahoma, Geneva, Verdana;
-  color: #1F1F1F;
 }
 /*# sourceMappingURL=styles.css.map */
