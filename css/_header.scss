@@ -1,7 +1,7 @@
 header{
         position: relative;
         z-index: 1;
-        background-color: white;
+        background-color: var(--background-header-color);
 
     .menu-icon{
         width: 40px;
@@ -25,9 +25,19 @@ header{
             border-bottom: solid 2px transparent;
         }
         .link-button:hover{
-            border-color: $primary-color-clear;
+            border-color: var(--border-nav-color-hover);
+            color: var(--letters-nav-color-hover);
         }
     }
+}
+
+.container-themes{
+    @include flex-direction-justify(flex,column,initial,initial);
+    position: absolute;
+    left: 0%;
+    top: auto;
+    width: 100px;
+    color: var(--font-color);
 }
 
 /*  Tablets  */
