@@ -7,7 +7,7 @@
 
 article{
     #container-sm{
-        background-color: $primary-color-clear;
+        background-color: var(--background-color);
         @include flex-direction-justify(flex,column,initial,initial);
         flex: 100%;
         padding-bottom: 30px;
