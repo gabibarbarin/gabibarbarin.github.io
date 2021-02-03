@@ -7,15 +7,21 @@ body,html{
     padding: 0;
     font-family: $primary-font;
     scroll-behavior: smooth;
-}
-
-h1{
-    font-family: $primary-font;
+    background-color: var(--background-header-color);
 }
 
 .title-section{
+    font-family: $primary-font;
     font-size: 54px;
     margin: 30px 0 60px -63px;
+}
+
+h1,h2,a{
+    color: var(--titles-color);
+}
+
+p,figcaption,label{
+    color: var(--font-color);
 }
 
 #global-container{
@@ -25,12 +31,15 @@ h1{
 
 a{
     text-decoration: none;
-    color: $primary-color-dark;
     transition: all .0s;
 }
 
 a:hover{
-    color: $primary-color-str-clear;
+    color: var(--letters-nav-color-hover);
+}
+
+a:visited{
+    color: var(--font-color);
 }
 
 /*  Mixin  */
@@ -55,8 +64,8 @@ a:hover{
 }
 
 /*  Var  */
-$box-shadow: 2px 2px 5px $primary-color-str-dark;
-$border-1px: solid 1px $secondary-color-str-clear;
+$box-shadow: 2px 2px 5px var(--box-shadow-color);
+$border-1px: solid 1px var(--border-nav-color);
 
 /*  Media  */
 @media only screen and (max-width:768px){
