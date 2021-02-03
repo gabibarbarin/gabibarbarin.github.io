@@ -1,7 +1,7 @@
 #container-contact{
     @include flex-direction-justify(flex,column,initial,initial);
     flex: 100%;
-    background-color: $primary-color-clear;
+    background-color: var(--background-color);
 
     .divider{
         display: flex;
@@ -19,8 +19,9 @@
                 @include flex-direction-justify(flex,column,initial,initial);
                 width: 100%;
                 padding: 0 10px 10px 10px;
-                background-color: $third-color-clear;
+                background-color: var(--background-form-color);
                 font-family: $primary-font;
+                box-shadow: $box-shadow;
 
                 div{
                     margin: 10px 0;
@@ -31,10 +32,13 @@
 
                     input[type=text], input[type=email]{
                         @include style-inputs;
+
+                        background-color: var(--background-input-color);
                     }
                     textarea{
                         @include style-inputs;
 
+                        background-color: var(--background-input-color);
                         overflow: auto;
                         resize: vertical;
                         overflow-wrap: break-word;
@@ -54,14 +58,15 @@
                     cursor: pointer;
                     font-family: $primary-font-dark;
                     font-size: 20px;
-                    color: white;
+                    color: var(--button-letter-color);
 
-                    background-color: $secondary-color-str-dark;
+                    background-color: var(--button-form-color);
 
                     transition: all .4s;
                 }
                 input[type=submit]:hover{
-                    background-color: $secondary-color-dark;
+                    background-color: var(--button-form-color-hover);
+                    color: var(--button-letter-color-hover);
                 }
             }
         }
