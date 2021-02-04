@@ -4,6 +4,7 @@
   --background-color-project:#;
   --background-form-color:#;
   --background-input-color:#;
+  --border-input-color:#;
   --letters-nav-color-hover:#;
   --border-nav-color:#;
   --border-nav-color-hover:#;
@@ -12,6 +13,10 @@
   --button-form-color-hover:#;
   --button-letter-color:#;
   --button-letter-color-hover:#;
+  --button-theme-background:#;
+  --button-theme-letter:#;
+  --button-return-background:#;
+  --button-return-letter:#;
 }
 
 @font-face {
@@ -72,6 +77,10 @@ a:visited {
 
 /*  Mixin  */
 /*  Var  */
+:root {
+  --link-return:#;
+}
+
 /*  Media  */
 @media only screen and (max-width: 768px) {
   .title-section {
@@ -141,25 +150,43 @@ header .nav-button .link-button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: initial;
       -ms-flex-pack: initial;
           justify-content: initial;
   justify-items: initial;
   position: absolute;
   left: 0%;
-  top: auto;
-  width: 100px;
+  top: 18%;
+  width: 200px;
   color: var(--font-color);
+  padding: 0;
+}
+
+.container-themes .button-theme {
+  padding: 0;
+  font-size: 30px;
+  background: var(--button-theme-background);
+  color: var(--button-theme-letter);
+  border-radius: 100%;
+  border: none;
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  outline: none;
 }
 
 /*  Tablets  */
 @media only screen and (max-width: 768px) {
   header .container-nav {
     margin-right: 5%;
+  }
+  .container-themes .button-theme {
+    width: 55px;
+    height: 55px;
   }
 }
 
@@ -175,13 +202,43 @@ header .nav-button .link-button:hover {
   header .container-nav .nav-button .link-button {
     padding: 20px 15px;
   }
+  .container-themes .button-theme {
+    font-size: 23px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container-themes {
+    left: 0%;
+    top: 63px;
+  }
+  .container-themes .button-theme {
+    margin-right: 8px;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+  }
 }
 
 #return {
   position: fixed;
+  border-radius: 100%;
+  width: 55px;
+  height: 55px;
   right: 2%;
   top: 2%;
   z-index: 0;
+  background-color: var(--button-return-background);
+}
+
+#return i {
+  position: absolute;
+  right: -2%;
+  top: -3%;
+  font-size: 60px;
+  color: var(--button-return-letter);
 }
 
 article #container-sm {
@@ -273,6 +330,11 @@ article #container-sm .mini-explanation > p > a {
   #return {
     top: 1%;
     right: 1%;
+    width: 50px;
+    height: 50px;
+  }
+  #return i {
+    font-size: 53px;
   }
   article #container-sm .container-img-fig .img-container {
     width: 45vw;
@@ -285,6 +347,13 @@ article #container-sm .mini-explanation > p > a {
 
 /*  Moviles  */
 @media only screen and (max-width: 600px) {
+  #return {
+    width: 40px;
+    height: 40px;
+  }
+  #return i {
+    font-size: 45px;
+  }
   article #container-sm {
     padding-right: 5%;
   }
@@ -516,7 +585,7 @@ article #container-sm .mini-explanation > p > a {
   font-family: "SourceSansPro-regular", sans-serif, Tahoma, Geneva, Verdana;
   background-color: white;
   border: none;
-  border-bottom: solid 1px #8ea09d;
+  border-bottom: solid 1px var(--border-input-color);
   border-radius: .5px;
   outline: none;
   background-color: var(--background-input-color);
@@ -529,7 +598,7 @@ article #container-sm .mini-explanation > p > a {
   font-family: "SourceSansPro-regular", sans-serif, Tahoma, Geneva, Verdana;
   background-color: white;
   border: none;
-  border-bottom: solid 1px #8ea09d;
+  border-bottom: solid 1px var(--border-input-color);
   border-radius: .5px;
   outline: none;
   background-color: var(--background-input-color);
@@ -552,6 +621,7 @@ article #container-sm .mini-explanation > p > a {
   font-family: "SourceSansPro-regular", sans-serif, Tahoma, Geneva, Verdana;
   font-size: 20px;
   color: var(--button-letter-color);
+  outline: none;
   background-color: var(--button-form-color);
   -webkit-transition: all .4s;
   transition: all .4s;
