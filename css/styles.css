@@ -210,15 +210,24 @@ header .nav-button .link-button:hover {
 }
 
 @media only screen and (max-width: 375px) {
-  .container-themes {
-    left: 0%;
-    top: 63px;
-  }
   .container-themes .button-theme {
-    margin-right: 8px;
+    margin-right: 3px;
     font-size: 20px;
     width: 35px;
     height: 35px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .container-themes {
+    left: -4%;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .container-themes {
+    left: 3px;
+    top: 63px;
   }
 }
 
