@@ -1,8 +1,21 @@
 #return{
     position: fixed;
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
     right: 2%;
     top: 2%;
     z-index: 0;
+    background-color: var(--button-return-background);
+
+    i{
+        position: absolute;
+        right: -2%;
+        top: -3%; 
+
+        font-size: 60px;
+        color: var(--button-return-letter);
+    }
 }
 
 article{
@@ -63,6 +76,12 @@ article{
     #return{
         top: 1%;
         right: 1%;
+        width: 50px;
+        height: 50px;
+    
+        i{
+            font-size: 53px;
+        }
     }
     article{
         #container-sm{ 
@@ -85,6 +104,13 @@ article{
 
 /*  Moviles  */
 @media only screen and (max-width: 600px){
+    #return{
+        width: 40px;
+        height: 40px;
+        i{   
+            font-size: 45px;
+        }
+    }
     article{
         #container-sm{ 
             padding-right: 5%;
