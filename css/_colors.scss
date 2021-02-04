@@ -1,23 +1,10 @@
-$primary-color-dark:#3D3D3D;
-$primary-color-str-dark:  #1F1F1F;
-
-$secondary-color-dark: #9895B1;
-$secondary-color-str-dark: #817E9F;
-
-$primary-color-clear: #BED8D4;
-$primary-color-str-clear: #8ea09d;
-
-$secondary-color-clear: #D6FFB7;
-$secondary-color-str-clear: #afcc99;
-
-$third-color-clear: #FFEDE1;
-
 :root{
     --background-header-color:#;
     --background-color:#;
     --background-color-project:#;
     --background-form-color:#;
     --background-input-color:#;
+    --border-input-color:#;
     --letters-nav-color-hover:#;
     --border-nav-color:#;
     --border-nav-color-hover:#;
@@ -26,4 +13,8 @@ $third-color-clear: #FFEDE1;
     --button-form-color-hover:#;
     --button-letter-color:#;
     --button-letter-color-hover:#;
+    --button-theme-background:#;
+    --button-theme-letter:#;
+    --button-return-background:#;
+    --button-return-letter:#;
 }
