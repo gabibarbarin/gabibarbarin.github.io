@@ -64,10 +64,10 @@ a:visited{
 }
 
 /*  Var  */
-$box-shadow: 2px 2px 5px var(--box-shadow-color);
+$box-shadow: 2px 2px 5px black;
 $border-1px: solid 1px var(--border-nav-color);
 :root{
---link-return:#;
+    --link-return:#;
 }
 
 /*  Media  */
