@@ -7,11 +7,9 @@ var modocolor = localStorage.getItem("modo");
 function cargarModo() {    
  
     if (modocolor === "oscuro") {
-        theme('#394551','#191D21','#394551','#394551','white','white','black','#9895B1','#9895B1','black',
-        'white','white','white','white','#BBC0C4','black','oscuro','white','black','black','white');
+        theme('#394551','#191D21','#394551','#394551','white','white','black','#9895B1','#9895B1','black','white','white','white','white','#BBC0C4','black','oscuro','white','black','black','white');
     } else {
-        theme('white','#BED8D4','#8EA09D','#FFEDE1','white','#1F1F1F','#817E9F','#9895B1','white','white',
-        '#8EA09D','#AFCC99','#BED8D4','black','394551','1F1F1F','claro','black','white','white','black');
+        theme('white','#BED8D4','#8EA09D','#FFEDE1','white','#1F1F1F','#817E9F','#9895B1','white','white','#8EA09D','#AFCC99','#BED8D4','black','394551','1F1F1F','claro','black','white','white','black');
     }
 }
 
