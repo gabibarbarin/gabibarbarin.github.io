@@ -490,11 +490,6 @@ article .container-slider .slider li .linea-tiempo .momento:nth-child(odd) {
   left: 55%;
 }
 
-article .container-slider .slider li .linea-tiempo .momento:nth-child(odd) .descripcion {
-  background-color: var(--background-color);
-  color: var(--font-color);
-}
-
 article .container-slider .slider li .linea-tiempo .momento:nth-child(odd) .descripcion::after {
   left: -10px;
   border-top: 10px solid transparent;
@@ -611,8 +606,20 @@ article .container-slider .menu-slider li a {
   article .container-slider .slider li {
     height: auto;
   }
+  article .container-slider .slider li .linea-tiempo #slide2Moment .descripcion::after {
+    top: calc(50% + 5px);
+  }
+  article .container-slider .slider li .linea-tiempo #slide2Moment::before {
+    top: calc(50% + 5px);
+  }
   article .container-slider .slider li .linea-tiempo .momento h3 span {
     display: block;
+  }
+  article .container-slider .slider li .linea-tiempo .momento .descripcion::after {
+    top: calc(50% + 25px);
+  }
+  article .container-slider .slider li .linea-tiempo .momento::before {
+    top: calc(50% + 25px);
   }
   article .container-slider .slider li .linea-tiempo::after {
     top: 5%;
@@ -694,6 +701,34 @@ article .container-slider .menu-slider li a {
     width: 90px;
     height: 67px;
   }
+  article .container-slider .slider li .linea-tiempo .momento {
+    width: 80%;
+  }
+  article .container-slider .slider li .linea-tiempo .momento .descripcion::after {
+    top: calc(50% + 25px);
+  }
+  article .container-slider .slider li .linea-tiempo .momento:nth-child(odd) {
+    left: 0;
+  }
+  article .container-slider .slider li .linea-tiempo .momento:nth-child(odd) .descripcion::before {
+    content: '';
+    position: absolute;
+    top: calc(50% + 25px);
+    right: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 12px solid var(--background-color);
+  }
+  article .container-slider .slider li .linea-tiempo .momento:nth-child(odd) .descripcion::after {
+    display: none;
+  }
+  article .container-slider .slider li .linea-tiempo .momento:nth-child(odd)::before {
+    left: calc(111.89% - 11.5px);
+  }
+  article .container-slider .slider li .linea-tiempo::after {
+    top: 4%;
+    left: calc(89% - 1px);
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -727,6 +762,9 @@ article .container-slider .menu-slider li a {
   }
   article #container-sm .knowledge-container .knowledge-img > img {
     margin: 0;
+  }
+  article #container-sm .menu-slider li:first-child {
+    margin-bottom: 10px;
   }
 }
 
