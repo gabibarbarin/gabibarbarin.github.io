@@ -155,7 +155,7 @@ article{
                         text-transform: uppercase;
                         color: black;
                     }
-                                          
+                    
                     .momento{
                         position: relative;
                         width: 45%;
@@ -196,15 +196,10 @@ article{
                             border-bottom: 10px solid transparent;
                             border-left: 12px solid var(--background-color);
                         }
-                      }
+                    }
                       
                     .momento:nth-child(odd){
                         left: 55%;
-
-                        .descripcion{
-                            background-color: var(--background-color);
-                            color: var(--font-color);
-                        }
 
                         .descripcion::after{
                             left: -10px;
@@ -337,12 +332,26 @@ article{
                 li{
                     height: auto;
                     .linea-tiempo{
+                        #slide2Moment{
+                            .descripcion::after{
+                                top: calc(50% + 5px);
+                            }
+                        }
+                        #slide2Moment::before{
+                                top: calc(50% + 5px);
+                        }
                         .momento{
                             h3{
                                 span{
                                     display: block;
                                 }
                             }
+                            .descripcion::after{
+                                top: calc(50% + 25px);
+                            }
+                        }
+                        .momento::before{
+                            top: calc(50% + 25px);
                         }
                     }
                     .linea-tiempo::after{
@@ -426,6 +435,47 @@ article{
                 }
             }
         }
+        .container-slider{
+            .slider{
+                li{
+                    .linea-tiempo{
+                        .momento{
+                            width: 80%;
+                            
+                            .descripcion::after{
+                                top: calc(50% + 25px);
+                            }
+                        }
+                        
+                        .momento:nth-child(odd){
+                            left: 0;
+    
+                            .descripcion::before{
+                                content: '';
+                                position: absolute;
+                                top: calc(50% + 25px);
+                                right: -10px;
+                                border-top: 10px solid transparent;
+                                border-bottom: 10px solid transparent;
+                                border-left: 12px solid var(--background-color);
+                            }
+                            .descripcion::after{
+                                display: none;
+                            }
+                        }
+                                                  
+                        .momento:nth-child(odd)::before{
+                            left: calc(111.89% - 11.5px);
+                        }                                                            
+                          
+                    }
+                    .linea-tiempo::after{
+                        top: 4%;
+                        left: calc(89% - 1px);
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -454,6 +504,11 @@ article{
                     >img{
                         margin: 0;
                     }  
+                }
+            }
+            .menu-slider{
+                li:first-child{
+                    margin-bottom: 10px;
                 }
             }
         }
