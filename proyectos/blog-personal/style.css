@@ -237,6 +237,7 @@ span{
     height: 30vh;
     background: linear-gradient(rgba(137, 200, 252, 0.5),rgba(165, 207, 248, 0.2));
     display: flex;
+    margin-top: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -271,7 +272,7 @@ span{
         padding: 17px;
     }
     #view-port-blog {
-        height: 112vh;
+        height: 100%;
     }
 }
 
@@ -280,7 +281,7 @@ span{
         flex: 40%;
     }
     #view-port-blog{
-        height: 112vh;
+        height: 100%;
     }
     .blog{
         flex-basis: 45%;
@@ -312,7 +313,7 @@ span{
         font-size: 45px;
     }
     #view-port-sobre-mi {
-        height: 126vh;
+        height: 100%;
     }
     .sobre-mi{
         flex-direction: column;
@@ -341,13 +342,13 @@ span{
         height: 65vh;
     }
     #view-port-trabajar-conmigo {
-        height: 140vh;
+        height: 100%;
     }
     .contenedor-razones {
         flex-direction: column;
     }
     #view-port-blog {
-        height: 211vh;
+        height: 100%;
     }
     .contenedor-blogs{
         flex-direction: column;
