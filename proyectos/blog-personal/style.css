@@ -43,6 +43,10 @@ header a{
 nav{
     margin-top: 15px;
 }
+.contenedor-menu{
+    display: flex;
+    text-align: center;
+}
 /* Botones del menu */
 .elemento-menu{
     font-size: 15px;
@@ -258,6 +262,31 @@ span{
     width: 50px;
     height: auto;
 }
+@media (max-width: 857px){
+    .elemento-menu{
+        font-size: 10px;
+        margin: 0 0 0 20px;
+    }
+    .elemento-menu:hover{
+        padding: 17px;
+    }
+    #view-port-blog {
+        height: 112vh;
+    }
+}
+
+@media (max-width: 768px){
+    .servicio-singular{
+        flex: 40%;
+    }
+    #view-port-blog{
+        height: 112vh;
+    }
+    .blog{
+        flex-basis: 45%;
+    }
+}
+
 /* Comienza Responsive celulares */
 @media (max-width: 600px){
     nav{
@@ -283,7 +312,7 @@ span{
         font-size: 45px;
     }
     #view-port-sobre-mi {
-        height: 102vh;
+        height: 126vh;
     }
     .sobre-mi{
         flex-direction: column;
@@ -312,19 +341,20 @@ span{
         height: 65vh;
     }
     #view-port-trabajar-conmigo {
-        height: 120vh;
+        height: 140vh;
     }
     .contenedor-razones {
         flex-direction: column;
     }
     #view-port-blog {
-        height: 150vh;
+        height: 211vh;
     }
     .contenedor-blogs{
         flex-direction: column;
+        align-items: center;
     }
     .blog {
-        width: 100%;
+        width: 80%;
     }
     .view-port-footer {
         height: 20vh;
