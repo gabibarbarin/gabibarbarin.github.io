@@ -7,7 +7,6 @@ html,body{
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 a{
     text-decoration: none;
     color: white;
@@ -15,19 +14,54 @@ a{
 }
 a:hover{
     color: $primary-color-dark;
-
 }
 
 ul{
     list-style-type: none;
-
     a:hover{
-        background-color: $secondary-color;
+        background-color: $secondary-color;   
     }
 }
 
 img{
     border-radius: 10px;
+}
+
+.blog-box{
+    padding: 30px 15px;
+    .titled-list{
+        padding-top: 0px 20px 20px 20px;
+    }
+    .untitled-list{
+        padding: 20px;
+    }
+}
+
+.general-button{
+    background-color: $primary-color-dark;
+    font-size: 13px;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border-radius: 10px;
+    display: inline-block;
+}
+.general-button:hover{
+    background-color: $secondary-color;
+    font-weight: bold;
+}
+
+.return-button{
+    @extend .general-button;
+    margin: 0;
+    display: none;
+}
+
+.button-top{
+    margin-bottom: 10px;
+}
+
+.button-bot{
+    margin-top: 10px;
 }
 
 @mixin text-general {
@@ -48,5 +82,15 @@ img{
 .titles-second{
     @include color-mayus;
     font-size: 15px;
+}
+
+.titles-third{
+    @include color-mayus;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.titles-strong{
+    color: $secondary-color;
 }
 
