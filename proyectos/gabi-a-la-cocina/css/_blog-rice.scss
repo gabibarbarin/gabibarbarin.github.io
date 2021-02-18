@@ -1,9 +1,13 @@
-.rice-box{
-    padding: 30px 15px;
-
-    ul{
+.blog-box{
+    .titled-list{
         list-style-type: disc;
-        padding: 20px;
+        margin: 0;
+        li{
+           @include text-general;
+        }
+    }
+    .untitled-list{
+        list-style-type: disc;
         margin: 0;
         li{
            @include text-general;
