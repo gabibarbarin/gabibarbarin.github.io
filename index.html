@@ -1,80 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript"> (function() { emailjs.init("user_MhBpz7Sr0xI3HA57O1df6"); })(); </script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_MhBpz7Sr0xI3HA57O1df6");
+      })();
+    </script>
     <script src="../js/themes.js"></script>
 
-    <meta name="description" content="Elegir un buen Desarrollador Web es primordial para cualquier proyecto, aquí te dejo mi portafolio para que tomes bien esa decisión."/>
-    <meta name="subject" content="Desarrollo Web">
-    <meta name="author" content="Gabriel Barbarin, gabi.barbarin@hotmail.com">
-    
-    <meta name="description" property="og:title" content="Gabriel Barbarin - Desarrollador Web">
-    <meta name="description" property="og:description" content="Portafolio de Gabriel Barbarin Desarrollador Web.">
-    <meta name="image" property="og:image" content="https://gabibarbarin.github.io/img/sm-escritorio.jpeg"/>
-    <meta property="og:url" content="https://gabibarbarin.github.io"/>
+    <meta
+      name="description"
+      content="Elegir un buen Desarrollador Web es primordial para cualquier proyecto, aquí te dejo mi portafolio para que tomes bien esa decisión."
+    />
+    <meta name="subject" content="Desarrollo Web" />
+    <meta name="author" content="Gabriel Barbarin, gabi.barbarin@hotmail.com" />
+
+    <meta
+      name="description"
+      property="og:title"
+      content="Gabriel Barbarin - Desarrollador Web"
+    />
+    <meta
+      name="description"
+      property="og:description"
+      content="Portafolio de Gabriel Barbarin Desarrollador Web."
+    />
+    <meta
+      name="image"
+      property="og:image"
+      content="https://gabibarbarin.github.io/img/sm-escritorio.jpeg"
+    />
+    <meta property="og:url" content="https://gabibarbarin.github.io" />
 
     <title>Gabriel Barbarin ~ Desarrollador Web</title>
-    <link rel="icon" type="img/png" href="./img/favicon-white.png">
-</head>
-<body onload="cargarModo()">
-
-<div id="global-container">
-
-    <header include-html="./partials/header.html"></header>
-    <article include-html="./partials/sobre-mi.html"></article>
-    <article include-html="./partials/projects.html"></article> 
-    <section id="container-contact">
-        
+    <link rel="icon" type="img/png" href="./img/favicon-white.png" />
+  </head>
+  <body onload="cargarModo()">
+    <div id="global-container">
+      <header include-html="./partials/header.html"></header>
+      <article include-html="./partials/sobre-mi.html"></article>
+      <article include-html="./partials/projects.html"></article>
+      <section id="container-contact">
         <div class="divider">
-            <h1 class="title-section">Contacto</h1>
+          <h1 class="title-section">Contacto</h1>
         </div>
 
         <div class="divider">
+          <div class="form-and-p">
+            <p>Rellená este formulario para enviarme un correo electrónico</p>
+            <form id="form-contact">
+              <div>
+                <label for="from_name">Nombre</label>
+                <input type="text" name="from_name" id="from_name" />
+              </div>
 
-            <div class="form-and-p">
-                <p>Rellená este formulario para enviarme un correo electrónico</p>
-                <form id="form-contact">
-            
-                    <div>
-                        <label for="from_name">Nombre</label>
-                        <input type="text" name="from_name" id="from_name">
-                    </div>
-            
-                    <div>
-                        <label for="from_email">Email <span>*</span></label>
-                        <input type="email" name="from_email" id="from_email" required>
-                    </div>
-            
-                    <div>
-                        <label for="message">Mensaje <span>*</span></label>
-                        <textarea name="message" id="message" rows="10" required></textarea>
-                        
-                    </div>
-            
-                    <input type="submit" id="button" value="Enviar" form="form-contact">
-                </form>
-            </div>
+              <div>
+                <label for="from_email">Email <span>*</span></label>
+                <input
+                  type="email"
+                  name="from_email"
+                  id="from_email"
+                  required
+                />
+              </div>
 
-            <div class="other-methods">
-                <p>O podés comunicarte por cualquiera de estos medios:</p>
-                <a id="icon-linkedin" href="https://www.linkedin.com/in/gabrielbarbarin/" target="_blank"><img src="./img/icon-linkedin.png" alt="linkedin Gabriel Barbarin"></a>
-                <a href="https://wa.me/+5492236896553" target="_blank"><img src="./img/icon-whatsapp.png" alt="linkedin Gabriel Barbarin"></a>
-                <a href="https://www.instagram.com/gabibarbarin/" target="_blank"><img src="./img/icon-instagram.png" alt="linkedin Gabriel Barbarin"></a>
-            </div>
+              <div>
+                <label for="message">Mensaje <span>*</span></label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="10"
+                  required
+                ></textarea>
+              </div>
+
+              <input
+                type="submit"
+                id="button"
+                value="Enviar"
+                form="form-contact"
+              />
+            </form>
+          </div>
+
+          <div class="other-methods">
+            <p>O podés comunicarte por cualquiera de estos medios:</p>
+            <a
+              id="icon-linkedin"
+              href="https://www.linkedin.com/in/gabrielbarbarin/"
+              target="_blank"
+              ><img
+                src="./img/icon-linkedin.png"
+                alt="linkedin Gabriel Barbarin"
+            /></a>
+            <a href="https://wa.me/+5492236896553" target="_blank"
+              ><img
+                src="./img/icon-whatsapp.png"
+                alt="linkedin Gabriel Barbarin"
+            /></a>
+            <a href="https://www.instagram.com/gabibarbarin/" target="_blank"
+              ><img
+                src="./img/icon-instagram.png"
+                alt="linkedin Gabriel Barbarin"
+            /></a>
+          </div>
         </div>
-    
-    </section>
-    <footer id="container-footer" include-html="./partials/footer.html"></footer>
-
-</div>
+      </section>
+      <footer
+        id="container-footer"
+        include-html="./partials/footer.html"
+      ></footer>
+    </div>
     <script src="./js/cambio.js"></script>
     <script src="../js/emailjs.js"></script>
     <script src="./js/include-html.js"></script>
-
-</body>
+  </body>
 </html>
